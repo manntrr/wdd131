@@ -25,6 +25,13 @@ header {
 }
 .nav-button {
     color: white;
+    
+    text-align: center;
+    width:25%
+}
+.nav-button:visited {
+    color:aqua;
+    
     text-align: center;
     width:25%
 }
