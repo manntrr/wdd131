@@ -24,6 +24,7 @@ header {
     flex-direction: row;
 }
 .nav-button {
+    color: white;
     text-align: center;
     width:25%
 }
