@@ -101,7 +101,7 @@
     border-style: var(--debug-border-style-solid);
     border-color: var(--debug-header-border-color);
 }
-.course-title {
+.title {
     grid-column: var(--header-title-columns-start)/var(--header-title-columns-end);
     grid-row: var(--header-title-rows-start)/var(--header-title-rows-end);
     display:block;
