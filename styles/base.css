@@ -153,6 +153,7 @@
 .main {
     grid-column: var(--body-centered-columns-start)/var(--body-centered-columns-end);
     grid-row: var(--body-main-rows-start)/var(--body-main-rows-end);
+    max-width: var(--main-width);
     display: grid;
     grid-template-columns: 10rem auto 1fr 10rem;
     grid-template-rows: 1rem auto 1rem;
