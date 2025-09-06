@@ -275,6 +275,14 @@
     border-style: var(--debug-border-style-solid);
     border-color: var(--debug-main-card-location-border-color);
 }
+.title-location-sep {
+    grid-column: var(--card-title-location-columns-start)/var(--card-title-location-columns-end);
+    grid-row: var(--card-title-location-rows-end)/var(--card-title-location-rows-end);
+    height: 1px;
+    margin: 0rem;
+    background-color: var(--primary-color);
+    text-align: center;
+}
 .image-location {
     grid-column: var(--card-image-location-columns-start)/var(--card-image-location-columns-end);
     grid-row: var(--card-image-location-rows-start)/var(--card-image-location-rows-end);
