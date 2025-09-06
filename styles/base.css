@@ -1,0 +1,341 @@
+:root {
+    --primary-color: white;
+    --primary-background: darkblue;
+    --secondary-color: var(--primary-background);
+    --secondary-background: var(--primary-color);
+    --visited-link-color: darkred;
+
+    --main-width: 1024px;
+    --me-width: 602px;
+    --resources-width: 422px;
+
+    --debug-outer-color: red;
+    --debug-border-style-solid: solid;
+    --debug-body-border-color: var(--primary-background);
+    /*--debug-body-border-color: var(--debug-outer-color);/**/
+
+    --debug-level-2-color: orange;
+    --debug-header-border-color: var(--primary-background);
+    /*--debug-header-border-color: var(--debug-level-2-color);/**/
+    --debug-main-border-color: var(--primary-background);
+    /*--debug-main-border-color: var(--debug-level-2-color);/**/
+    --debug-footer-border-color: var(--primary-background);
+    /*--debug-footer-border-color: var(--debug-level-2-color);/**/
+
+    --debug-level-3-color: yellow;
+    --debug-course-title-border-color: var(--primary-background);
+    /*--debug-course-title-border-color: var(--debug-level-3-color);/**/
+    --debug-header-menu-border-color: var(--primary-background);
+    /*--debug-header-menu-border-color: var(--debug-level-3-color);/**/
+    --debug-main-name-border-color: var(--primary-background);
+    /*--debug-main-name-border-color: var(--debug-level-3-color);/**/
+    --debug-main-card-border-color: var(--secondary-background);
+    /*--debug-main-card-border-color: var(--debug-level-3-color);/**/
+
+    --debug-level-4-color: green;
+    --debug-header-menu-item-border-color: var(--secondary-background);
+    /*--debug-header-menu-item-border-color: var(--debug-level-4-color);/**/
+    --debug-main-card-title-border-color: var(--secondary-background);
+    /*--debug-main-card-title-border-color: var(--debug-level-4-color);/**/
+    --debug-main-card-image-me-border-color: var(--primary-background);
+    /*--debug-main-card-image-me-border-color: var(--debug-level-4-color);/**/
+    --debug-main-card-info-me-border-color: var(--primary-background);
+    /*--debug-main-card-info-me-border-color: var(--debug-level-4-color);/**/
+    --debug-main-card-location-border-color: var(--primary-background);
+    /*--debug-main-card-location-border-color: var(--debug-level-4-color);/**/
+    --debug-main-card-image-location-description-border-color: var(--primary-background);
+    /*--debug-main-card-image-location-description-border-color: var(--debug-level-4-color);/**/
+    --debug-main-card-image-location-description-border-color: var(--primary-background);
+    /*--debug-main-card-image-location-description-border-color: var(--debug-level-4-color);/**/
+    --debug-main-card-info-location-border-color: var(--primary-background);
+    /*--debug-main-card-info-location-border-color: var(--debug-level-4-color);/**/
+    --debug-main-card-menu-border-color: var(--primary-background);
+    /*--debug-main-card-menu-border-color: var(--debug-level-4-color);/**/
+
+    --debug-level-5-color: blue;
+    --debug-main-card-menu-item-border-color: var(--primary-background);
+    /*--debug-main-card-menu-item-border-color: var(--debug-level-5-color);/**/
+
+    --debug-level-6-color: indigo;
+    --debug-level-7-color: violet;
+
+  font-family: "Eagle Lake", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.body {
+    display: grid;
+    grid-template-columns: auto,1fr,auto,1fr,auto,0fr;
+    grid-template-rows: 1fr,auto,1fr,0fr;
+    --body-full-columns-start: 1;
+    --body-full-columns-end: 6;
+    --body-centered-columns-start: 2;
+    --body-centered-columns-end: 5;
+    --body-header-rows-start: 1;
+    --body-header-rows-end: 2;
+    --body-main-rows-start: 2;
+    --body-main-rows-end: 3;
+    --body-footer-rows-start: 3;
+    --body-footer-rows-end: 4;
+    color: var(--primary-color);
+    background-color: var(--primary-background);
+
+    border-style: var(--debug-border-style-solid);
+    border-color: var(--debug-body-border-color);
+}
+.header {
+    grid-column: var(--body-full-columns-start)/var(--body-full-columns-end);
+    grid-row: var(--body-header-rows-start)/var(--body-header-rows-end);
+    display: grid;
+    grid-template-columns: auto,1fr,1fr,1fr,1fr,auto,0fr;
+    grid-template-rows: 1fr,2rem,1fr,0fr;
+    --header-full-columns-start: 1;
+    --header-full-columns-end:7;
+    --header-title-columns-start:2;
+    --header-title-columns-end:4;
+    --header-title-rows-start:1;
+    --header-title-rows-end:2;
+    --header-menu-rows-start:3;
+    --header-menu-rows-end:4;
+
+    border-style: var(--debug-border-style-solid);
+    border-color: var(--debug-header-border-color);
+}
+.course-title {
+    grid-column: var(--header-title-columns-start)/var(--header-title-columns-end);
+    grid-row: var(--header-title-rows-start)/var(--header-title-rows-end);
+    display:block;
+    text-align: right;
+    margin-top: 1rem;
+    margin-right: 2rem;
+
+    border-style: var(--debug-border-style-solid);
+    border-color: var(--debug-course-title-border-color);
+}
+.header-menu {
+    grid-column: var(--header-full-columns-start)/var(--header-full-columns-end);
+    grid-row: var(--header-menu-rows-start)/var(--header-menu-rows-end);
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+
+    border-style: var(--debug-border-style-solid);
+    border-color: var(--debug-header-menu-border-color);
+}
+.header-menu-item {
+    color: var(--secondary-color);
+    background-color: var(--secondary-background);
+    text-align: center;
+    width:25%;
+    height:1rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+
+    border-style: var(--debug-border-style-solid);
+    border-color: var(--debug-header-menu-item-border-color);
+}
+.header-menu-item:visited {
+    color:var(--visited-link-color);
+
+    border-style: var(--debug-border-style-solid);
+    border-color: var(--debug-header-menu-item-border-color);
+}
+.header-menu-item:hover {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    height: 2rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+
+    border-style: var(--debug-border-style-solid);
+    border-color: var(--debug-header-menu-item-border-color);
+}
+.main {
+    grid-column: var(--body-centered-columns-start)/var(--body-centered-columns-end);
+    grid-row: var(--body-main-rows-start)/var(--body-main-rows-end);
+    display: grid;
+    grid-template-columns: auto,1fr,auto,1fr,auto,1fr,auto,0fr;
+    grid-template-rows: 1fr,0fr;
+    --main-full-columns-start: 1;
+    --main-full-columns-end:8;
+    --main-me-columns-start:1;
+    --main-me-columns-end:4;
+    --main-resources-columns-start:4;
+    --main-resources-columns-end:8;
+    --main-rows-start:1;
+    --main-rows-end:2;
+
+    border-style: var(--debug-border-style-solid);
+    border-color: var(--debug-main-border-color);
+}
+.main-name {
+    position:absolute;
+    top: 0;
+    right:0;
+    margin-right: 8rem;
+
+    border-style: var(--debug-border-style-solid);
+    border-color: var(--debug-main-name-border-color);
+}
+.card-me {
+    grid-column: var(--main-me-columns-start)/var(--main-me-columns-end);
+    width: var(--me-width);
+}
+.card-resources {
+    grid-column: var(--main-resources-columns-start)/var(--main-resources-columns-end);
+    width: var(--resources-width);
+}
+.card {
+    grid-row: var(--main-rows-start)/var(--main-rows-end);
+    margin: .5rem;
+    border-style: solid;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    display: grid;
+    grid-template-columns: 1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,0fr;
+    grid-template-rows: 1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,0fr;
+    --card-full-columns-start: 1;
+    --card-full-columns-end:9;
+    --card-title-columns-start:1;
+    --card-title-columns-end:9;
+    --card-info-me-columns-start:1;
+    --card-info-me-columns-end:7;
+    --card-image-me-columns-start:7;
+    --card-image-me-columns-end:9;
+    --card-title-location-columns-start:1;
+    --card-title-location-columns-end:7;
+    --card-image-location-columns-start:1;
+    --card-image-location-columns-end:2;
+    --card-image-location-description-columns-start:1;
+    --card-image-location-description-columns-end:2;
+    --card-info-location-columns-start:2;
+    --card-info-location-columns-end:7;
+    --card-full-rows-start:1;
+    --card-full-rows-end:9;
+    --card-title-rows-start:1;
+    --card-title-rows-end:2;
+    --card-info-me-rows-start:2;
+    --card-info-me-rows-end:5;
+    --card-title-location-rows-start:5;
+    --card-title-location-rows-end:7;
+    --card-image-me-rows-start:3;
+    --card-image-me-rows-end:7;
+    --card-image-location-rows-start:7;
+    --card-image-location-rows-end:8;
+    --card-image-location-description-rows-start:8;
+    --card-image-location-description-rows-end:9;
+    --card-info-location-rows-start:7;
+    --card-info-location-rows-end:9;
+    --card-resource-menu-columns-start:1;
+    --card-resource-menu-columns-end:9;
+    --card-resource-menu-rows-start:3;
+    --card-resource-menu-rows-end:9;
+
+    border-style: var(--debug-border-style-solid);
+    border-color: var(--debug-main-card-border-color);    
+}
+.card-title {
+    grid-column: var(--card-title-columns-start)/var(--card-title-columns-end);
+    grid-row: var(--card-title-rows-start)/var(--card-title-rows-end);
+    color: var(--secondary-color);
+    background-color: var(--secondary-background);
+    margin-top: .5rem;
+    margin-bottom: 0;
+    text-align: center;
+    height: 2rem;
+
+    border-style: var(--debug-border-style-solid);
+    border-color: var(--debug-main-card-title-border-color);    
+}
+.image-me {
+    grid-column: var(--card-image-me-columns-start)/var(--card-image-me-columns-end);
+    grid-row: var(--card-image-me-rows-start)/var(--card-image-me-rows-end);
+    width: 12rem;
+    margin: .5rem;
+
+    border-style: var(--debug-border-style-solid);
+    border-color: var(--debug-main-card-image-me-border-color);
+}
+.info-me {
+    grid-column: var(--card-info-me-columns-start)/var(--card-info-me-columns-end);
+    grid-row: var(--card-info-me-rows-start)/var(--card-info-me-rows-end);
+    margin: .5rem;
+    text-align: left;
+
+    border-style: var(--debug-border-style-solid);
+    border-color: var(--debug-main-card-info-me-border-color);
+}
+.title-location {
+    grid-column: var(--card-title-location-columns-start)/var(--card-title-location-columns-end);
+    grid-row: var(--card-title-location-rows-start)/var(--card-title-location-rows-end);
+    margin: .5rem;
+    text-align: center;
+
+    border-style: var(--debug-border-style-solid);
+    border-color: var(--debug-main-card-location-border-color);
+}
+.image-location {
+    grid-column: var(--card-image-location-columns-start)/var(--card-image-location-columns-end);
+    grid-row: var(--card-image-location-rows-start)/var(--card-image-location-rows-end);
+    align-self: end;
+    width: 9rem;
+    margin: .5rem;
+
+    border-style: var(--debug-border-style-solid);
+    border-color: var(--debug-main-card-image-location-border-color);
+}
+.image-description-location {
+    grid-column: var(--card-image-location-description-columns-start)/var(--card-image-location-description-columns-end);
+    grid-row: var(--card-image-location-description-rows-start)/var(--card-image-location-description-rows-end);
+    margin: .5rem;
+    text-align: center;
+
+    border-style: var(--debug-border-style-solid);
+    border-color: var(--debug-main-card-image-location-description-border-color);
+}
+.info-location {
+    grid-column: var(--card-info-location-columns-start)/var(--card-info-location-columns-end);
+    grid-row: var(--card-info-location-rows-start)/var(--card-info-location-rows-end);
+    margin: .5rem;
+    text-align: left;
+
+    border-style: var(--debug-border-style-solid);
+    border-color: var(--debug-main-card-info-location-border-color);
+}
+.card-menu {
+    grid-column: var(--card-resource-menu-columns-start)/var(--card-resource-menu-columns-end);
+    grid-row: var(--card-resource-menu-rows-start)/var(--card-resource-menu-rows-end);
+    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    margin-left: .5rem;
+
+    border-style: var(--debug-border-style-solid);
+    border-color: var(--debug-main-card-menu-border-color);
+}
+.card-menu-item{
+    list-style: disc;
+    color: var(--primary-color);
+    margin: 2rem;
+    margin-left: 0;
+    font-size:large;
+    text-decoration: none;
+    
+    border-style: var(--debug-border-style-solid);
+    border-color: var(--debug-main-card-menu-item-border-color);
+}
+.card-menu-item:visited {
+    color: var(--primary-color);    
+}
+.card-menu-item:hover {
+    font-size:larger;
+    text-decoration:underline;
+}
+.footer {
+    grid-column: var(--body-full-columns-start)/var(--body-full-columns-end);
+    grid-row: var(--body-footer-rows-start)/var(--body-footer-rows-end);
+    text-align: center;
+
+    border-style: var(--debug-border-style-solid);
+    border-color: var(--debug-footer-border-color);
+}

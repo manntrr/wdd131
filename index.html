@@ -3,9 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Tracy Robert Mann</title>
+    <meta name="description" content="Home page for the WDD 131 - Dynamic Web Fundamentals class as authored by Tracy Robert Mann.  The content includes an About Me, Web Dev Resources, a Scripture page and a final Project page.  LinkedIn and Canvas links are also provided.">
+    <meta name="author" content="Tracy Robert Mann">
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" preload defer>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin preload defer>
+    <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap" rel="stylesheet" preload defer>
+    <script src="scripts/getdates.js" defer></script>
 </head>
-<body>
-    
+<body class="body">
+    <header class="header">
+        <span class="course-title" id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+        <nav class="header-menu" >
+            <a class="header-menu-item" href = "#blank">LinkedIn</a>
+            <a class="header-menu-item" href = "https://byupw.instructure.com">Canvas</a>
+            <a class="header-menu-item" href = "https://www.churchofjesuschrist.org/study/scripture/bofm/1-ne/3?lang=eng&id=p7#p7">Scripture</a>
+            <a class="header-menu-item" href = "#blank">Final Project</a>
+        </nav>
+    </header>
+    <main class="main">
+        <h1 class="main-name">Tracy Robert Mann</h1>
+        <section class="card card-me">
+            <h2 class="card-title">About Me</h2>
+            <img class="image-me" src="images/Tracy.jpg" alt="Picture of Tracy Mann" height="200px" width="100px">
+            <p class="info-me">My name is Tracy Mann and I go by Tracy.  I was born in Hornell, N.Y., USA.  I have moved around a lot in my youth, living in North Dakota, Minnesota and Western New York State.  I joined the Army out of high school and served in Fort Knox, Kentucky, West Texas, and Augsburg, Germany.  I returned to Western New York for school after leaving the Army, and got a job working in a Retail Grocery Store Help Desk in Retail support.  I have worked my way through the company into an Engineering role, now supporting Advertising Technology and Marketing Technology.  The company I work for is called Ahold/Delhaize.  My company had moved me to Greenville, South Carolina in 2001.  A few years later I moved to Simpsonville, South Carolina, a close suburb of Greenville and I have been here since.  I am sealed to my wife Haydee, and we have no children at this time.  We love to visit her family in Peru when we can and see other sites as well.</p>
+            <h3 class="title-location">
+                Simpsonville, South Carolina, USA
+                <hr>
+            </h3>
+            <img class="image-location" src="images/FlagOfSouthCarolina.svg" alt="Picture of South Carolina Flag." height="75px" width="75px">
+            <p class="image-description-location">official Flag of South Carolina</p>
+            <p class="info-location">Simpsonville is a fast-growing city in Greenville County, South Carolina, known for its family-friendly atmosphere, strong economy, and suburban feel. Located in the "Golden Strip" region, it offers a blend of small-town charm and modern amenities, attracting both young families and professionals. The city is committed to economic development and offers a lower-than-average cost of living.</p>
+        </section>
+        <section class="card card-resources">
+            <h2 class="card-title">Web Dev Resources</h2>
+            <list class="card-menu">
+                <li><a class="card-menu-item" href="_Blank">Dev.to Community</a></li>
+                <li><a class="card-menu-item"  href="_Blank">Smashing Magazine</a></li>
+                <li><a class="card-menu-item"  href="_Blank">CSS Tricks</a></li>
+                <li><a class="card-menu-item"  href="_Blank">W3 Schools</a></li>
+                <li><a class="card-menu-item"  href="_Blank">Udemy</a></li>
+                <li><a class="card-menu-item"  href="_Blank">Image Placeholder</a></li>
+            </list>
+        </section>
+    </main>
+    <footer class="footer">
+        <p><span id="currentyear"></span> Tracy Robert Mann - South Carolina, USA.</p>
+        <p id="lastModified"></p>
+    </footer>    
 </body>
 </html>
