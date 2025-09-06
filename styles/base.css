@@ -6,8 +6,8 @@
     --visited-link-color: darkred;
 
     --main-width: 1024px;
-    --me-width: 602px;
-    --resources-width: 422px;
+    --me-width: 768px;
+    --resources-width: 256px;
 
     --debug-outer-color: red;
     --debug-border-style-solid: solid;
@@ -65,12 +65,12 @@
 }
 .body {
     display: grid;
-    grid-template-columns: auto,1fr,auto,1fr,auto;
-    grid-template-rows: 1fr,auto,1fr;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 10rem auto 5rem;
     --body-full-columns-start: 1;
-    --body-full-columns-end: 6;
+    --body-full-columns-end: 4;
     --body-centered-columns-start: 2;
-    --body-centered-columns-end: 5;
+    --body-centered-columns-end: 3;
     --body-header-rows-start: 1;
     --body-header-rows-end: 2;
     --body-main-rows-start: 2;
@@ -87,16 +87,16 @@
     grid-column: var(--body-full-columns-start)/var(--body-full-columns-end);
     grid-row: var(--body-header-rows-start)/var(--body-header-rows-end);
     display: grid;
-    grid-template-columns: auto,1fr,1fr,1fr,1fr,auto;
-    grid-template-rows: 1fr,2rem,1fr;
+    grid-template-columns: auto 1fr 1fr 1fr 1fr auto;
+    grid-template-rows: 2rem 8rem;
     --header-full-columns-start: 1;
     --header-full-columns-end:7;
     --header-title-columns-start:2;
     --header-title-columns-end:4;
     --header-title-rows-start:1;
     --header-title-rows-end:2;
-    --header-menu-rows-start:3;
-    --header-menu-rows-end:4;
+    --header-menu-rows-start:2;
+    --header-menu-rows-end:3;
 
     border-style: var(--debug-border-style-solid);
     border-color: var(--debug-header-border-color);
@@ -154,16 +154,16 @@
     grid-column: var(--body-centered-columns-start)/var(--body-centered-columns-end);
     grid-row: var(--body-main-rows-start)/var(--body-main-rows-end);
     display: grid;
-    grid-template-columns: auto,1fr,auto,1fr,auto,1fr,auto;
-    grid-template-rows: 1fr;
+    grid-template-columns: 10rem auto 1fr 10rem;
+    grid-template-rows: 1rem auto 1rem;
     --main-full-columns-start: 1;
-    --main-full-columns-end:8;
-    --main-me-columns-start:1;
-    --main-me-columns-end:4;
-    --main-resources-columns-start:4;
-    --main-resources-columns-end:8;
-    --main-rows-start:1;
-    --main-rows-end:2;
+    --main-full-columns-end:5;
+    --main-me-columns-start:2;
+    --main-me-columns-end:3;
+    --main-resources-columns-start:3;
+    --main-resources-columns-end:4;
+    --main-rows-start:2;
+    --main-rows-end:3;
 
     border-style: var(--debug-border-style-solid);
     border-color: var(--debug-main-border-color);
