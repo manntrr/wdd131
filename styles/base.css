@@ -140,6 +140,16 @@
     border-style: var(--debug-border-style-solid);
     border-color: var(--debug-header-menu-item-border-color);
 }
+nav.a:hover{
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    height: 2rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+
+    border-style: var(--debug-border-style-solid);
+    border-color: var(--debug-header-menu-item-border-color);
+}
 .header-menu-item:hover {
     padding-top: 2rem;
     padding-bottom: 1rem;
