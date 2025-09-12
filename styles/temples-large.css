@@ -21,6 +21,9 @@
 	.header-menu-item a {
 		text-align: center;
 	}
+    .header-menu-item:hover {
+        font-size: clamp(1.25rem, 2.5vmin, 1.75rem);
+    }
 	.header-menu {
         font-size: 2rem;
 	}
