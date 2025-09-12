@@ -1,0 +1,79 @@
+@media only screen and (min-width: 40em) {
+	h1 {
+		font-size: 2rem;
+	}
+    .header {
+        display: flex;
+        flex-direction: row;
+    }
+	.header-menu-navigation {
+        display: block;
+	}
+    .header-menu-navigation ul {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+	.header-menu-item {
+		display: block;
+		flex: 1 1 100%;
+	}
+	.header-menu-item a {
+		text-align: center;
+	}
+	.header-menu {
+        font-size: 2rem;
+	}
+    .header-menu::before {
+        content: "";
+    }
+    .main {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 5rem repeat(3, 1fr);
+    margin: 0 auto;
+    }
+    .main-name {
+    grid-row: 1;
+    grid-column: 1/6;
+    }
+    .image {
+        width: var(--image-width);
+        height: var(--image-height);
+    }
+    .atlanta {
+    grid-column: 2;
+    grid-row:2;
+}
+.columbia {
+    grid-column: 3;
+    grid-row:2;
+}
+.kirtland {
+    grid-column: 4;
+    grid-row:2;
+}
+.lima {
+    grid-column: 2;
+    grid-row:3;
+}
+.nauvoo {
+    grid-column: 3;
+    grid-row:3;
+}
+.palmyra {
+    grid-column: 4;
+    grid-row:3;
+}
+.slc {
+    grid-column: 2;
+    grid-row:4;
+}
+.wdc {
+    grid-column: 3;
+    grid-row:4;
+}
+.wq {
+    grid-column: 4;
+    grid-row:4;
+}
+}

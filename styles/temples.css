@@ -1,0 +1,245 @@
+:root {
+    --primary-color: white;
+    --primary-background: darkblue;
+    --secondary-color: var(--primary-background);
+    --secondary-background: var(--primary-color);
+    --visited-link-color: darkred;
+
+    --main-width: 1024px;
+    --image-width: 335px;
+    --image-height: 402px;
+
+    --debug-outer-color: red;
+    --debug-border-style-solid: solid;
+    --debug-body-border-color: var(--primary-background);
+    /*--debug-body-border-color: var(--debug-outer-color);/**/
+
+    --debug-level-2-color: orange;
+    --debug-header-border-color: var(--primary-background);
+    /*--debug-header-border-color: var(--debug-level-2-color);/**/
+    --debug-main-border-color: var(--primary-background);
+    /*--debug-main-border-color: var(--debug-level-2-color);/**/
+    --debug-footer-border-color: var(--primary-background);
+    /*--debug-footer-border-color: var(--debug-level-2-color);/**/
+
+    --debug-level-3-color: yellow;
+    --debug-header-menu-border-color: var(--primary-color);
+    /*--debug-header-menu-border-color: var(--debug-level-3-color);/**/
+    --debug-header-menu-navigation-border-color: var(--primary-color);
+    /*--debug-header-menu-navigation-border-color: var(--debug-level-3-color);/**/
+    --debug-main-name-border-color: var(--primary-background);
+    /*--debug-main-name-border-color: var(--debug-level-3-color);/**/
+    --debug-main-card-border-color: var(--secondary-background);
+    /*--debug-main-card-border-color: var(--debug-level-3-color);/**/
+
+    --debug-level-4-color: green;
+    --debug-header-title-border-color: var(--primary-color);
+    /*--debug-header-title-border-color: var(--debug-level-4-color);/**/
+    --debug-header-menu-item-border-color: var(--secondary-background);
+    /*--debug-header-menu-item-border-color: var(--debug-level-4-color);/**/
+    --debug-main-card-image-border-color: var(--secondary-background);
+    /*--debug-main-card-image-border-color: var(--debug-level-4-color);/**/
+    --debug-main-card-title-border-color: var(--primary-background);
+    /*--debug-main-card-title-border-color: var(--debug-level-4-color);/**/
+
+    --debug-level-5-color: blue;
+    --debug-level-6-color: indigo;
+    --debug-level-7-color: violet;
+
+  font-family: "Eagle Lake", serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+.body {
+    color: var(--primary-color);
+    background-color: var(--primary-background);
+
+    border-style: var(--debug-border-style-solid);
+    border-color: var(--debug-body-border-color);
+}
+.header {
+    display: block;
+
+    border-style: var(--debug-border-style-solid);
+    border-color: var(--debug-header-border-color);
+}
+.header-menu{
+    flex: 1 1 100%;
+	display: block;
+	font-size: 2rem;
+	font-weight: 700;
+	text-decoration: none;
+	padding: 0.5rem 0.75rem;
+    color: var(--secondary-color);
+    background-color: var(--secondary-background);
+
+    border-style: var(--debug-border-style-solid);
+    border-color: var(--debug-header-menu-border-color);
+}
+.header-menu::before {
+	content: "≡";
+}
+.header-menu.show::before {
+	content: "❌";
+}
+.active::before {
+    content: "📍";
+}
+.header-title {
+    text-align: right;
+    margin-top: 1rem;
+    margin-left: 2rem;
+
+    border-style: var(--debug-border-style-solid);
+    border-color: var(--debug-header-title-border-color);
+}
+.header-menu-navigation {
+    flex: 1 1 100%;
+	color: var(--secondary-color);
+	background-color: var(--secondary-background);
+    margin-top: 2rem;
+    display: none;
+	list-style: none;
+	margin: 0 auto;
+	max-width: 760px;
+
+    border-style: var(--debug-border-style-solid);
+    border-color: var(--debug-header-menu-navigation-border-color);
+}
+.header-menu-navigation.show {
+	display: block;
+}
+.header-menu-navigation ul {
+    display: block;
+}
+.header-menu-item {
+	display: block;
+	text-align: left;
+	text-decoration: none;
+    color: var(--secondary-color);
+    background-color: var(--secondary-background);
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+
+    border-style: var(--debug-border-style-solid);
+    border-color: var(--debug-header-menu-item-border-color);
+}
+.header-menu-item a {
+    text-decoration: none;
+
+    border-style: var(--debug-border-style-solid);
+    border-color: var(--debug-header-menu-item-border-color);
+}
+
+.header-menu-item:visited {
+    text-decoration: none;
+    color:var(--visited-link-color);
+
+    border-style: var(--debug-border-style-solid);
+    border-color: var(--debug-header-menu-item-border-color);
+}
+.header-menu-item:hover {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    height: 2rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+	font-size: clamp(2rem, 4vmin, 3rem);
+
+    border-style: var(--debug-border-style-solid);
+    border-color: var(--debug-header-menu-item-border-color);
+}
+.main {
+    grid-column: var(--body-centered-columns-start)/var(--body-centered-columns-end);
+    grid-row: var(--body-main-rows-start)/var(--body-main-rows-end);
+    max-width: var(--main-width);
+    display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 5rem repeat(9, 1fr);
+
+    border-style: var(--debug-border-style-solid);
+    border-color: var(--debug-main-border-color);
+}
+.main-name {
+    grid-row: 1;
+    grid-column: 1;
+    text-align: center;
+
+    border-style: var(--debug-border-style-solid);
+    border-color: var(--debug-main-name-border-color);
+}
+.card {
+    margin: .5rem;
+    border-style: solid;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    border-style: var(--debug-border-style-solid);
+    border-color: var(--debug-main-card-border-color);    
+}
+.card-title {
+    color: var(--primary-color);
+    background-color: var(--primary-background);
+    display: block;
+    margin: .25rem;
+
+    border-style: var(--debug-border-style-solid);
+    border-color: var(--debug-main-card-title-border-color);    
+}
+    .atlanta {
+        grid-column: 1;
+        grid-row:2;
+    }
+    .columbia {
+        grid-column: 1;
+        grid-row:3;
+    }
+    .kirtland {
+        grid-column: 1;
+        grid-row:4;
+    }
+    .lima {
+        grid-column: 1;
+        grid-row:5;
+    }
+    .nauvoo {
+        grid-column: 1;
+        grid-row:6;
+    }
+    .palmyra {
+        grid-column: 1;
+        grid-row:7;
+    }
+    .slc {
+        grid-column: 1;
+        grid-row:8;
+    }
+    .wdc {
+        grid-column: 1;
+        grid-row:9;
+    }
+    .wq {
+        grid-column: 1;
+        grid-row:10;
+    }
+.image {
+    width: 100%;
+    height: 100%/*35em*/;
+
+    --image-width: 335px;
+    --image-height: 402px;
+
+
+}
+.footer {
+    grid-column: var(--body-full-columns-start)/var(--body-full-columns-end);
+    grid-row: var(--body-footer-rows-start)/var(--body-footer-rows-end);
+    text-align: center;
+
+    border-style: var(--debug-border-style-solid);
+    border-color: var(--debug-footer-border-color);
+}
