@@ -133,6 +133,11 @@
     border-color: var(--debug-header-menu-item-border-color);
 }
 
+.header-menu-item a:hover {
+    /*using the list item for the hover effect*/
+    text-decoration: none;
+}
+
 .header-menu-item:visited {
     text-decoration: none;
     color:var(--visited-link-color);
@@ -140,15 +145,14 @@
     border-style: var(--debug-border-style-solid);
     border-color: var(--debug-header-menu-item-border-color);
 }
-li::hover {
+.header-menu-item:hover {
     padding-top: 2rem;
     padding-bottom: 1rem;
     height: 2rem;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
 	font-size: clamp(2rem, 4vmin, 3rem);
-}
-.header-menu-item:hover {
+
     border-style: var(--debug-border-style-solid);
     border-color: var(--debug-header-menu-item-border-color);
 }
