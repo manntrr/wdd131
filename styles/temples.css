@@ -6,8 +6,8 @@
     --visited-link-color: darkred;
 
     --main-width: 1024px;
-    --image-width: 335px;
-    --image-height: 402px;
+    --image-width: /*335px;*/320px;
+    --image-height: /*402px;*/256px;
 
     --debug-outer-color: red;
     --debug-border-style-solid: solid;
