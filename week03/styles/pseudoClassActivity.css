@@ -1,0 +1,142 @@
+:root {
+    --border:  1px solid #777;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	/*flex-direction: column;/**/
+	align-items: center;
+	justify-content: center;
+	/*font-family: 'Acme', sans-serif;/**/
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: Roboto, helvetica, sans-serif;
+	margin: 0;
+	padding: 0.5rem;
+	font-size: larger;
+	font-weight: 700;
+}
+
+h1 .pre {
+	margin: 0.75rem;
+}
+
+main {
+	margin: 0.5rem;
+	border: 1px solid rgb(0 0 0 / 0.1);
+	padding: 0.5rem;
+	background-color: #eee;
+}
+
+p {
+	margin: 1rem;
+}
+
+.datatable {
+	width: 200px;
+	margin-top: 2rem;
+}
+
+.row {
+	display: grid;
+	grid-template-columns: 100px 100px;
+	align-items: center;
+	text-align: center;
+}
+
+.col {
+    border-top: var(--border);
+    border-left: var(--border);
+    padding: 10px;
+}
+.col:nth-child(even) {
+    border-right: var(--border);
+}
+
+.row:last-child {
+    border-bottom: var(--border);
+    background-color: #999;
+}
+
+a:active,
+a:link,
+a:visited {
+    color: navy;
+}
+a:hover {
+    color: purple;
+}
+
+
+section {
+	margin: 1rem 0;
+	border: 1px solid rgb(0 0 0 / 0.1);
+	padding: 0.5rem;
+	width: 760px;
+	background-color: #eee;
+}
+
+p,
+input,
+label {
+	margin: 0.25rem;
+	padding: 0.5rem;
+}
+
+.sel::selection {
+	background-color: #000;
+	color: yellow;
+}
+
+.firstline::first-line {
+	color: tomato;
+}
+.firstletter::first-letter {
+	color: navy;
+	font-size: 2rem;
+}
+.before::before {
+	content: "🎈 ";
+}
+.after::after {
+	content: " 🌮";
+}
+
+ol {
+	list-style: numeric;
+	margin-left: 3rem;
+}
+
+ol li::marker {
+    content: "✔ ";
+    color: navy;
+    font-size: 2rem;
+}
+
+.counter {
+	counter-increment: paras;
+}
+
+.counter::before {
+	content: "🔸" counter(paras) ":";
+}
+
+.counter {
+	font-family: courier;
+}
+
+.mark-complete::before {
+	content: "🗝️ ";
+}
+

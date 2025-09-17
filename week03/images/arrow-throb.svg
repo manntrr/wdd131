@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+	<circle cx="12" cy="12" r="10" fill="none" stroke="#555">
+		<animate attributeName="stroke-width" values="1; .5; 1; .5; 1; .5; 1; .5; 1; .5; 1; .5; 1; .5; 1; .5; 1; .5; 1; .5; 1; .5; 1; .5; 1; .5; 1; .5; 1; .5; 1; .5; 1" dur="15s" repeatCount="indefinate" />
+		<animate attributeName="r" values="10; 8; 10; 8; 10; 8; 10; 8; 10; 8; 10; 8; 10; 8; 10; 8; 10; 8; 10; 8; 10; 8; 10; 8; 10; 8; 10; 8; 10; 8; 10; 8; 10" dur="15s" repeatCount="indefinate" />
+	</circle>
+	<polyline points="8,12 12,16 16,12" fill="none" stroke="#555" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="2" stroke-width="1">
+		<animate attributeName="stroke-width" values=".5; 1; .5; 1; .5; 1; .5; 1; .5; 1; .5; 1; .5; 1; .5; 1; .5; 1; .5; 1; .5; 1; .5; 1; .5; 1; .5; 1; .5; 1; .5; 1; 1" dur="15s" repeatCount="indefinate" />
+		<animate attributeName="points" values="9,15 12,17 15,15;9,12 9,15 12,15;9,9 7,12 9,15;12,9 9,9 9,12;15,9 12,7 9,9;15,12 15,9 12,9;15,15 17,12 15,9;12,15 15,15 15,12;9,15 12,17 15,15" dur="15s" repeatCount="indefinate" />
+	</polyline>
+	<line x1="12" y1="7" x2="12" y2="16" stroke="#555" stroke-linecap="round" stroke-width="1">
+		<animate attributeName="stroke-width" values=".5; 1; .5; 1; .5; 1; .5; 1; .5; 1; .5; 1; .5; 1; .5; 1; .5; 1; .5; 1; .5; 1; .5; 1; .5; 1; .5; 1; .5; 1; .5; 1; 1" dur="15s" repeatCount="indefinate" />
+		<animate attributeName="x1" values="12; 15; 17; 15; 12; 9; 7; 9; 12" dur="15s" repeatCount="indefinate" />
+		<animate attributeName="y1" values="7; 9; 12; 15; 17; 15; 12; 9; 7" dur="15s" repeatCount="indefinate" />
+		<animate attributeName="x2" values="12; 9; 7; 9; 12; 15; 17; 15; 12" dur="15s" repeatCount="indefinate" />
+		<animate attributeName="y2" values="17; 15; 12; 9; 7; 9; 12; 15; 17" dur="15s" repeatCount="indefinate" />
+	</line>
+</svg>
