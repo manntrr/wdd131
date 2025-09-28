@@ -1,6 +1,6 @@
 :root{
     --primary-color: black;
-    --primary-background: white;
+    /*--primary-background: white;
     --primary-background-transparent: #ffffff80;
     --secondary-color: var(--primary-background);
     --secondary-background: red;
@@ -15,7 +15,7 @@
     background: var(--primary-background);
 
     .peru-body {
-        font-family: "Eagle Lake" serif;
+        font-family: "Eagle Lake", serif;
         font-weight: 400;
         font-style: normal;
         font-display: swap;
@@ -164,5 +164,5 @@
         height: 32px;
         vertical-align: middle;
         margin: 5px;
-    }
+    }/**/
 }
