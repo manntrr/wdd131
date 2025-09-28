@@ -15,6 +15,14 @@
     background-color: var(--primary-background);
 
 }
+@font-face {
+    font-family: 'Playwrite PE';
+    src: url('https://fonts.googleapis.com/css2?family=Playwrite+PE:wght@100..400&display=swap'); /*URL to font*/
+}
+@font-face {
+    font-family: 'Eagle Lake';
+    src: url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap'); /*URL to font*/
+}
 
     .body {
         font-family: "Eagle Lake", serif;
