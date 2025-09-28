@@ -1,3 +1,7 @@
+/*
+to preload and improve performance
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Playwrite+PE:wght@100..400&family=Eagle+Lake&display=swap" as="style" crossorigin="anonymous">
+*/
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+PE:wght@100..400&family=Eagle+Lake&display=swap');
 /*@font-face {
     font-family: 'Playwrite PE';
