@@ -14,7 +14,9 @@
     color: var(--primary-color);
     background-color: var(--primary-background);
 
-    .peru-body {
+}
+
+    .body {
         font-family: "Eagle Lake", serif;
         font-weight: 400;
         font-style: normal;
@@ -165,4 +167,3 @@
         vertical-align: middle;
         margin: 5px;
     }
-}
