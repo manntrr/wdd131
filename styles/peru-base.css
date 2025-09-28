@@ -1,6 +1,6 @@
 :root{
     --primary-color: black;
-    /*--primary-background: white;
+    --primary-background: white;
     --primary-background-transparent: #ffffff80;
     --secondary-color: var(--primary-background);
     --secondary-background: red;
@@ -11,7 +11,7 @@
     --link-color: darkviolet;
     --visited-link-color: darkred;
     --visited-link-color: darkred;
-    color: var(--primary-color);
+    /*color: var(--primary-color);
     background: var(--primary-background);
 
     .peru-body {
