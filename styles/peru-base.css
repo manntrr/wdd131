@@ -1,0 +1,171 @@
+:root{
+    --primary-color: black;
+    --primary-background: white;
+    --primary-background-transparent: #ffffff80;
+    --secondary-color: var(--primary-background);
+    --secondary-background: red;
+    --secondary-background-transparent:  #ff000080;
+    --tertiary-color: var(--primary-color);
+    --tertiary-background: yellow;
+    --tertiary-background-transparent: #ffff0080;
+    --link-color: darkviolet;
+    --visited-link-color: darkred;
+    --visited-link-color: darkred;
+    .peru-regular {
+        font-family: "Playwrite PE", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+    }
+    .medieval-regular {
+        font-family: "Eagle Lake", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+    }
+    color: var(--primary-color);
+    background: var(--primary-background);
+    .body {
+        width:100%;
+        min-width: 256px;
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        grid-template-rows: 6rem 1fr 8rem;
+        margin: 0px;
+        padding: 0px;
+    }
+    .header,.main,.footer {
+        height: auto;
+        grid-column: 2;
+    }
+    .header,.footer {
+        color: var(--secondary-color);
+        background-color: var(--secondary-background);
+        display: inline-block;
+    }
+    .header {
+        grid-row: 1;
+    }
+    .main {
+        grid-row: 2;
+    }
+    .footer {
+        grid-row: 3;
+        text-align: center;
+    }
+    .header-title {
+        width:100%;
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+    }
+    .header-place-title {
+        width:100%;
+        grid-column: 2;
+        text-align: center;
+    }
+    .header-place-title::before, .header-place-title::after {
+        content: url('../images/peru-flag-256-256.svg');
+        display: inline-block;
+        width: 64px;
+        height: 64px;
+        vertical-align: middle;
+        margin: 10px;
+    }
+    .hero {
+        width: 100%;
+    }
+    .hero-picture {
+        width: 100%;
+        height: auto;
+    }
+    .hero-image {
+        width: 100%;
+        height: auto;
+    }
+    .card {
+        text-align: center;
+    }
+    .unordered-list-item {
+        display: grid;
+        grid-template-columns: auto 1fr 1fr auto;
+        column-gap: 0px;
+        row-gap: 0px;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .unordered-list-a {
+        grid-template-rows: 1rem 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1rem;
+    }
+    .unordered-list-b {
+        grid-template-rows: 1rem 1fr 1fr 1fr 1fr 1rem;
+    }
+    .unordered-list-item::marker {
+        content:none;
+    }
+    .unordered-list-item-label {
+        grid-column: 2;
+        text-align: right;
+        vertical-align: middle;
+    }
+    .unordered-list-item-label::after {
+        content: url('../images/peru-flag-round-256-256.svg');
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+        margin-top: 10px;
+        margin-bottom: 32px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .unordered-list-item-value {
+        grid-column: 3;
+        text-align: left;
+        vertical-align: middle;
+        padding-top: .5rem;
+    }
+    .unordered-list-item-a {
+        grid-row: 2;
+    }
+    .unordered-list-item-b {
+        grid-row: 3;
+    }
+    .unordered-list-item-c {
+        grid-row: 4;
+    }
+    .unordered-list-item-d {
+        grid-row: 5;
+    }
+    .unordered-list-item-e {
+        grid-row: 6;
+    }
+    .unordered-list-item-f {
+        grid-row: 7;
+    }
+    .unordered-list-item-g {
+        grid-row: 8;
+    }
+    .unordered-list-item-h {
+        grid-row: 9;
+    }
+    .unordered-list-item-i {
+        grid-row: 2;
+    }
+    .unordered-list-item-j {
+        grid-row: 3;
+    }
+    .unordered-list-item-k {
+        grid-row: 4;
+    }
+    .unordered-list-item-l {
+        grid-row: 5;
+    }
+    .currentyear::after, .location::before {
+        content: url('../images/peru-flag-256-256.svg');
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        vertical-align: middle;
+        margin: 5px;
+    }
+}

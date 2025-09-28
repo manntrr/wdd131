@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+	<defs>
+		<style>
+		.stroke-gold-fill-white{fill:#ffffff;stroke:#ffd700;stroke-width:4;}
+		.stroke-gold-fill-red{fill:#ff0000;stroke:#ffd700;stroke-width:4;}
+		</style>
+	</defs>
+	<title/>
+	<g data-name="peru-flag" id="2">
+		<circle
+			class="stroke-gold-fill-white"
+			cx="128"
+			cy="128"
+			r="96"
+		/>
+		<path
+			class="stroke-gold-fill-red"
+			d="
+				M 95 38
+				A 96 96 0 0 0 94 218"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="stroke-gold-fill-red"
+			d="
+				M 164 216.5
+				A 96 96 0 0 0 164 39"
+			stroke-linejoin="round"
+		/>
+	</g>
+</svg>

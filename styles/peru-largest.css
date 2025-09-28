@@ -1,0 +1,21 @@
+@media only screen and (min-width: 2000px) {
+    .weather-title::after {
+        content: url('../images/weather_sun_sunny_temperature_icon-pexels.svg');
+        display: inline-block;
+        width: 64px;
+        height: 64px;
+        vertical-align: middle;
+        margin-left: 10px;
+    }
+    .weather-image{
+        visibility: hidden;
+        display: none;
+    }
+    .weather {
+        position: absolute;
+        top: 905px;
+        right: .25rem;
+        height: 55%;
+        width:auto;
+    }
+}
