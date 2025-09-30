@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Loading Practice</title>
+    <meta name="description" content="Lazy Loading Practice">
+    <meta name="author" content="Tracy R Mann">
+    <link rel="stylesheet" href="styles/lazyLoading.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap" rel="stylesheet">
+    <script src="scripts/LazyLoading.js" defer></script>
+</head>
+<body id="body" class="body">
+    <header id="header" class="header">
+<!--		<a id="header-menu-anchor" class="header-menu-anchor" href="#">-->
+            <h1><span id="header-menu-title" class="header-menu-title">Lazy Loading Practice</span></h1>
+<!--		</a>-->
+<!--		<nav id="header-menu-navigation" class="header-menu-navigation" >
+            <ul id="header-menu-navigation-list" class="header-menu-navigation-list" >
+                <li id="home-menu-item" class="header-menu-item active">
+                    <a id="home-menu-item-anchor" class="header-menu-item-anchor" href = "#">Home</a>
+                </li>
+                <li id="page1-menu-item" class="header-menu-item">
+                    <a id="page1-menu-item-anchor" class="header-menu-item-anchor" href = "#">Page 1</a>
+                </li>
+                <li id="page2-menu-item" class="header-menu-item">
+                    <a id="page2-menu-item-anchor" class="header-menu-item-anchor" href = "#">Page 2</a>
+                </li>
+            </ul>
+        </nav>-->
+    </header>
+    <main id="main" class="main">
+        <h1 id="main-title" class="main-title">Lazy Loading</h1>
+        <div><img class="overlay-black" src="https://placehold.co/400x600?text=Lazy+Image+1" alt="Image 1" loading="lazy"></div>
+        <div><img class="overlay-black" src="https://placehold.co/400x600?text=Lazy+Image+2" alt="Image 2" loading="lazy"></div>
+        <div><img class="overlay-black" src="https://placehold.co/400x600?text=Lazy+Image+3" alt="Image 3" loading="lazy"></div>
+        <div><img class="overlay-black" src="https://placehold.co/400x600?text=Lazy+Image+4" alt="Image 4" loading="lazy"></div>
+        <div><img class="overlay-black" src="https://placehold.co/400x600?text=Lazy+Image+5" alt="Image 5" loading="lazy"></div>
+        <div><img class="overlay-black" src="https://placehold.co/400x600?text=Lazy+Image+6" alt="Image 6" loading="lazy"></div>
+    </main>
+    <footer id="footer" class="footer">
+		<p><span id="currentyear" class="currentyear"></span> Tracy Robert Mann - South Carolina, USA.</p>        
+		<p id="lastModified" class="lastModified"></p>
+    </footer>
+</body>
+</html>

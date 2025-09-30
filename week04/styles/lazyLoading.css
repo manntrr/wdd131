@@ -1,0 +1,33 @@
+.body {
+    width: 100%;
+}
+.main {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+}
+.main-title {
+    grid-column: 2;
+}
+div {
+    width: 400px;
+    background-color: black;
+    grid-column: 2;
+}
+img {
+    width: 100%;
+}
+.overlay-black {
+    background-color: black;
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
