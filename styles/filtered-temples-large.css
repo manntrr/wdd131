@@ -44,7 +44,7 @@
     --header-menu-link-padding-bottom: .25rem;
     --header-menu-link-padding-left: 0rem;
     --header-menu-title-margin-top: var(--header-menu-link-margin-top);
-    --header-menu-title-margin-right: var(--header-menu-link-margin-right);
+    --header-menu-title-margin-right: calc(var(--header-menu-link-margin-right) - 1.75rem);
     --header-menu-title-margin-bottom: var(--header-menu-link-margin-bottom);
     --header-menu-title-margin-left: var(--header-menu-link-margin-left);
     --header-menu-title-padding-top: var(--header-menu-link-padding-top);
@@ -77,8 +77,8 @@
     --header-menu-title-name-padding-left: 1rem;
     --header-menu-navigation-show-padding-top: .75rem;
     --header-menu-navigation-show-padding-right:.25rem;
-    --header-menu-navigation-show-padding-bottom: 1.5rem;
-    --header-menu-navigation-show-padding-left: 0rem;
+    --header-menu-navigation-show-padding-bottom: .75rem;
+    --header-menu-navigation-show-padding-left: .25rem;
     --header-menu-navigation-show-margin-top: 0rem;
     --header-menu-navigation-show-margin-right: 0rem;
     --header-menu-navigation-show-margin-bottom: auto;
@@ -90,7 +90,7 @@
     --header-menu-navigation-ul-padding-top: var(--header-menu-navigation-show-padding-top);
     --header-menu-navigation-ul-padding-right: var(--header-menu-navigation-show-padding-right);
     --header-menu-navigation-ul-padding-bottom: var(--header-menu-navigation-show-padding-bottom);
-    --header-menu-navigation-ul-padding-left: var(--header-menu-navigation-show-padding-left);
+    --header-menu-navigation-ul-padding-left: calc(var(--header-menu-navigation-show-padding-left) + 0rem);
     --header-menu-item-margin-top: var(--header-menu-navigation-show-margin-top);
     --header-menu-item-margin-right: var(--header-menu-navigation-show-margin-right);
     --header-menu-item-margin-bottom: var(--header-menu-navigation-show-margin-bottom);
@@ -124,6 +124,10 @@
     --header-menu-item-link-active-padding-right: var(--header-menu-item-link-padding-right);
     --header-menu-item-link-active-padding-bottom: calc(var(--header-menu-item-link-padding-bottom) - 1rem);
     --header-menu-item-link-active-padding-left: var(--header-menu-item-link-padding-left);
+    --header-menu-item-link-active-border-radius-top-right: 0rem;
+    --header-menu-item-link-active-border-radius-top-left:0rem;
+    --header-menu-item-link-active-border-radius-bottom-right: .5rem;
+    --header-menu-item-link-active-border-radius-bottom-left: .5rem;
 
     --footer-margin-top: .25px;
     --footer-margin-right: .25px;
@@ -140,8 +144,8 @@
     --header-show-height: calc(calc(2rem * 8) + var(--max-header-height) - var(--body-padding-top) - var(--body-padding-bottom) - var(--header-show-margin-top) - var(--header-show-margin-bottom));
     --header-menu-link-width: calc(var(--header-max-width) - var(--header-padding-left) - var(--header-padding-right) - var(--header-menu-link-margin-left) - var(--header-menu-link-margin-right));
     --header-menu-link-height: calc(var(--header-height) - var(--header-padding-top) - var(--header-padding-bottom) - var(--header-menu-link-margin-top) - var(--header-menu-link-margin-bottom));
-    --header-menu-title-width: calc(var(--header-menu-link-width) - var(--header-link-padding-left) - var(--header-link-padding-right) - var(--header-menu-title-margin-left) - var(--header-menu-title-margin-right));
-    --header-menu-title-height: calc(var(--header-menu-link-height) - var(--header-link-padding-top) - var(--header-link-padding-bottom) - var(--header-menu-title-margin-top) - var(--header-menu-title-margin-bottom));
+    --header-menu-title-width: calc(var(--header-menu-link-width) - var(--header-menu-link-padding-left) - var(--header-menu-link-padding-right) - var(--header-menu-title-margin-left) - var(--header-menu-title-margin-right));
+    --header-menu-title-height: calc(var(--header-menu-link-height) - var(--header-menu-link-padding-top) - var(--header-menu-link-padding-bottom) - var(--header-menu-title-margin-top) - var(--header-menu-title-margin-bottom));
     --hamburger-menu-width: calc(var(--total-hamburger-menu-width) - var(--header-menu-title-padding-left) - var(--header-menu-title-padding-right) - var(--hamburger-menu-margin-left) - var(--hamburger-menu-margin-right));
     --hamburger-menu-height: calc(var(--header-menu-title-height) - var(--header-menu-title-padding-top) - var(--header-menu-title-padding-bottom) - var(--hamburger-menu-margin-top) - var(--hamburger-menu-margin-bottom));
     --hamburger-menu-show-width: calc(var(--total-hamburger-menu-width) - var(--header-menu-title-padding-left) - var(--header-menu-title-padding-right) - var(--hamburger-menu-show-margin-left) - var(--hamburger-menu-show-margin-right));
@@ -366,6 +370,7 @@
     height: var(--header-menu-item-link-height);
     margin: var(--header-menu-item-link-margin-top) var(--header-menu-item-link-margin-right) var(--header-menu-item-link-margin-bottom) var(--header-menu-item-link-margin-left);
     padding: var(--header-menu-item-link-active-padding-top) var(--header-menu-item-link-active-padding-right) var(--header-menu-item-link-active-padding-bottom) var(--header-menu-item-link-active-padding-left);
+    border-radius: var(--header-menu-item-link-active-border-radius-top-right) var(--header-menu-item-link-active-border-radius-top-left) var(--header-menu-item-link-active-border-radius-bottom-right) var(--header-menu-item-link-active-border-radius-bottom-left);
 }
 .active::before {
     content: var(--header-menu-item-active-content);
