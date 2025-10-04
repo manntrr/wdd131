@@ -141,24 +141,20 @@ const products = [
   }
 ];
 // 5️⃣ find first 'expensive' product
-function renderTotal(firstExpensiveProduct, products) {
+function renderProduct(firstExpensiveProduct, products) {
     let firstProduct = products.find(product => product.price > 20.0);
-    //let productName = firstProduct.name;
-    //firstExpensiveProduct.innerText = productName;
-    firstExpensiveProduct.innerHTML = JSON.stringify(firstProduct);
+    firstExpensiveProduct.textContent = firstProduct.name;
 }
 firstExpensiveProduct = document.querySelector("#product");
 if(firstExpensiveProduct) {
-    renderTotal(firstExpensiveProduct, products);
+    renderProduct(firstExpensiveProduct, products);
 }
 
 // *************************************************************************************
 // 6️⃣ determine if Canada is contained within the array countries (see line 18)
 function renderID(output, countries) {
     let index = countries.indexOf("Canada");
-    //let productName = firstProduct.name;
-    //firstExpensiveProduct.innerText = productName;
-    output.innerHTML = index;
+    output.textContent = index;
 }
 output = document.querySelector("#output");
 if(output) {
