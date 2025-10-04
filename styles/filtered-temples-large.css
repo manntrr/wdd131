@@ -19,25 +19,25 @@
     --total-hamburger-menu-width: 3rem;
     --total-footer-height: 100%;
     --total-footer-width: 100%;
-    --header-margin-top: .25rem;
+    --header-margin-top: 0rem;
     --header-margin-right: .25rem;
-    --header-margin-bottom: .25rem;
+    --header-margin-bottom: 0rem;
     --header-margin-left: .25rem;
     --header-padding-top: .25rem;
     --header-padding-right: .25rem;
     --header-padding-bottom: .25rem;
     --header-padding-left: .25rem;
-    --header-show-margin-top: .25rem;
+    --header-show-margin-top: 0rem;
     --header-show-margin-right: .25rem;
-    --header-show-margin-bottom: .25rem;
+    --header-show-margin-bottom: 0rem;
     --header-show-margin-left: .25rem;
     --header-show-padding-top: .25rem;
     --header-show-padding-right: .25rem;
     --header-show-padding-bottom: .25rem;
     --header-show-padding-left: .25rem;
-    --header-menu-link-margin-top: .25rem;
+    --header-menu-link-margin-top: 0rem;
     --header-menu-link-margin-right: 0rem;
-    --header-menu-link-margin-bottom: .25rem;
+    --header-menu-link-margin-bottom: 0rem;
     --header-menu-link-margin-left: 0rem;
     --header-menu-link-padding-top: .25rem;
     --header-menu-link-padding-right: 0rem;
@@ -77,11 +77,11 @@
     --header-menu-title-name-padding-left: 1rem;
     --header-menu-navigation-show-padding-top: .25rem;
     --header-menu-navigation-show-padding-right:.25rem;
-    --header-menu-navigation-show-padding-bottom: 1.25rem;
+    --header-menu-navigation-show-padding-bottom: .75rem;
     --header-menu-navigation-show-padding-left: .25rem;
-    --header-menu-navigation-show-margin-top: .25rem;
+    --header-menu-navigation-show-margin-top: 0rem;
     --header-menu-navigation-show-margin-right: 0rem;
-    --header-menu-navigation-show-margin-bottom: .25rem;/*auto;/**/
+    --header-menu-navigation-show-margin-bottom: 0rem;/*auto;/**/
     --header-menu-navigation-show-margin-left: 0rem;
     --header-menu-navigation-ul-margin-top: var(--header-menu-navigation-show-margin-top);
     --header-menu-navigation-ul-margin-right: var(--header-menu-navigation-show-margin-right);
@@ -89,7 +89,7 @@
     --header-menu-navigation-ul-margin-left: var(--header-menu-navigation-show-margin-left);
     --header-menu-navigation-ul-padding-top: var(--header-menu-navigation-show-padding-top);
     --header-menu-navigation-ul-padding-right: var(--header-menu-navigation-show-padding-right);
-    --header-menu-navigation-ul-padding-bottom: var(--header-menu-navigation-show-padding-bottom);
+    --header-menu-navigation-ul-padding-bottom: calc(var(--header-menu-navigation-show-padding-bottom) + 0rem);
     --header-menu-navigation-ul-padding-left: calc(var(--header-menu-navigation-show-padding-left) + 0rem);
     --header-menu-item-margin-top: var(--header-menu-navigation-show-margin-top);
     --header-menu-item-margin-right: var(--header-menu-navigation-show-margin-right);
@@ -120,9 +120,9 @@
     --header-menu-item-link-padding-right: var(--header-menu-navigation-show-padding-right);
     --header-menu-item-link-padding-bottom: var(--header-menu-navigation-show-padding-bottom);
     --header-menu-item-link-padding-left: var(--header-menu-navigation-show-padding-left);
-    --header-menu-item-link-active-padding-top: calc(var(--header-menu-item-link-padding-top) - .5rem);
+    --header-menu-item-link-active-padding-top: calc(var(--header-menu-item-link-padding-top) + .5rem);
     --header-menu-item-link-active-padding-right: var(--header-menu-item-link-padding-right);
-    --header-menu-item-link-active-padding-bottom: calc(var(--header-menu-item-link-padding-bottom) + 1rem);
+    --header-menu-item-link-active-padding-bottom: calc(var(--header-menu-item-link-padding-bottom) + .5rem);
     --header-menu-item-link-active-padding-left: var(--header-menu-item-link-padding-left);
     --header-menu-item-link-active-border-radius-top-right: 0rem;
     --header-menu-item-link-active-border-radius-top-left:0rem;
