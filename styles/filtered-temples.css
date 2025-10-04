@@ -116,8 +116,8 @@
     --header-menu-item-hover-padding-right: var(--header-menu-navigation-show-padding-right);
     --header-menu-item-hover-padding-bottom: 1rem;/*var(--header-menu-navigation-show-padding-bottom);*/
     --header-menu-item-hover-padding-left: var(--header-menu-navigation-show-padding-left);
-    --header-menu-item-hover-border-radius-top-right: unset;
-    --header-menu-item-hover-border-radius-top-left:unset;
+    --header-menu-item-hover-border-radius-top-right: 0rem;
+    --header-menu-item-hover-border-radius-top-left: 0rem;
     --header-menu-item-hover-border-radius-bottom-right: 1rem;
     --header-menu-item-hover-border-radius-bottom-left: 1rem;
     --header-menu-item-link-margin-top: var(--header-menu-navigation-show-margin-top);
