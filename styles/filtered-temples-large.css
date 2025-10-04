@@ -140,8 +140,8 @@
     --header-show-height: calc(calc(2rem * 8) + var(--max-header-height) - var(--body-padding-top) - var(--body-padding-bottom) - var(--header-show-margin-top) - var(--header-show-margin-bottom));
     --header-menu-link-width: calc(var(--header-max-width) - var(--header-padding-left) - var(--header-padding-right) - var(--header-menu-link-margin-left) - var(--header-menu-link-margin-right));
     --header-menu-link-height: calc(var(--header-height) - var(--header-padding-top) - var(--header-padding-bottom) - var(--header-menu-link-margin-top) - var(--header-menu-link-margin-bottom));
-    --header-menu-title-width: calc(var(--header-link-width) - var(--header-link-padding-left) - var(--header-link-padding-right) - var(--header-menu-title-margin-left) - var(--header-menu-title-margin-right));
-    --header-menu-title-height: calc(var(--header-link-height) - var(--header-link-padding-top) - var(--header-link-padding-bottom) - var(--header-menu-title-margin-top) - var(--header-menu-title-margin-bottom));
+    --header-menu-title-width: calc(var(--header-menu-link-width) - var(--header-link-padding-left) - var(--header-link-padding-right) - var(--header-menu-title-margin-left) - var(--header-menu-title-margin-right));
+    --header-menu-title-height: calc(var(--header-menu-link-height) - var(--header-link-padding-top) - var(--header-link-padding-bottom) - var(--header-menu-title-margin-top) - var(--header-menu-title-margin-bottom));
     --hamburger-menu-width: calc(var(--total-hamburger-menu-width) - var(--header-menu-title-padding-left) - var(--header-menu-title-padding-right) - var(--hamburger-menu-margin-left) - var(--hamburger-menu-margin-right));
     --hamburger-menu-height: calc(var(--header-menu-title-height) - var(--header-menu-title-padding-top) - var(--header-menu-title-padding-bottom) - var(--hamburger-menu-margin-top) - var(--hamburger-menu-margin-bottom));
     --hamburger-menu-show-width: calc(var(--total-hamburger-menu-width) - var(--header-menu-title-padding-left) - var(--header-menu-title-padding-right) - var(--hamburger-menu-show-margin-left) - var(--hamburger-menu-show-margin-right));
