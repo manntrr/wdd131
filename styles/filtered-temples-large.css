@@ -81,7 +81,7 @@
     --header-menu-navigation-show-padding-left: .25rem;
     --header-menu-navigation-show-margin-top: 0rem;
     --header-menu-navigation-show-margin-right: 0rem;
-    --header-menu-navigation-show-margin-bottom: auto;
+    --header-menu-navigation-show-margin-bottom: 0rem;/*auto;/**/
     --header-menu-navigation-show-margin-left: 0rem;
     --header-menu-navigation-ul-margin-top: var(--header-menu-navigation-show-margin-top);
     --header-menu-navigation-ul-margin-right: var(--header-menu-navigation-show-margin-right);
