@@ -180,7 +180,7 @@
     --header-menu-item-link-large-max-width: max(var(--header-menu-item-link-large-total-width),var(--header-menu-item-link-large-hover-total-width));
     --header-menu-item-link-min-width: max(var(--header-menu-item-link-width),var(--header-menu-item-link-hover-width));
     --header-menu-item-link-large-min-width: max(var(--header-menu-item-link-large-width),var(--header-menu-item-link-large-hover-width));
-    --header-menu-item-link-display: unset;
+    --header-menu-item-link-display: inline;
     --header-menu-item-link-flex: unset;
     --header-menu-item-link-flex-direction: unset;
     --header-menu-item-link-column-count: 0;
