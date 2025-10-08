@@ -12,7 +12,7 @@
     --three-quarter-size-unit: calc(var(--base-size-unit) * 3 / 4);
     --one-and-three-quarter-size-unit: calc(var(--base-size-unit) + var(--three-quarter-size-unit));
     --half-size-unit: calc(var(--base-size-unit) / 2);
-    --one-and-half-size-unit: calc(var(--base-size-unit) = var(--half-size-unit));
+    --one-and-half-size-unit: calc(var(--base-size-unit) + var(--half-size-unit));
     --quarter-size-unit: calc(var(--base-size-unit) / 4);
     --one-and-quarter-size-unit: calc(var(--base-size-unit) + var(--quarter-size-unit));
     --eighth-size-unit: calc(var(--base-size-unit) / 8);
