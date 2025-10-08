@@ -46,7 +46,7 @@
     --hamburger-menu-icon-grid-row: none;
     --hamburger-menu-icon-color: var(--secondary-color);
     --hamburger-menu-icon-background-color: var(--secondary-background);
-    --hamburger-menu-icon-border-width: if(style(--debug: true): var(--line-width); else: var(--zero-size-unit); );
+    --hamburger-menu-icon-border-width: var(--zero-size-unit);/*if(style(--debug: true): var(--line-width); else: var(--zero-size-unit); );*/
     --hamburger-menu-icon-border-type: if(style(--debug: true): solid; else: none; );
     --hamburger-menu-icon-border-color: if(style(--debug: true): indigo; else: var(--hamburger-menu-icon-background-color); );
     --hamburger-menu-icon-font-family:  var(--primary-font-family);
@@ -122,7 +122,7 @@
     --header-menu-item-link-color: var(--unvisited-link-color);
     --header-menu-item-link-visited-color: var(--secondary-color);
     --header-menu-item-link-background-color: var(--secondary-background);
-    --header-menu-item-link-border-width: if(style(--debug: true): var(--line-width); else: var(--zero-size-unit); );
+    --header-menu-item-link-border-width: var(--zero-size-unit);/*if(style(--debug: true): var(--line-width); else: var(--zero-size-unit); );*/
     --header-menu-item-link-border-type: if(style(--debug: true): solid; else: none; );
     --header-menu-item-link-border-color: if(style(--debug: true): indigo; else: var(--header-menu-item-link-background-color); );
     --header-menu-item-link-font-family:  var(--primary-font-family);
@@ -211,7 +211,7 @@
     --header-menu-title-name-grid-row: none;
     --header-menu-title-name-color: var(--secondary-color);
     --header-menu-title-name-background-color: var(--secondary-background);
-    --header-menu-title-name-border-width: if(style(--debug: true): var(--line-width); else: var(--zero-size-unit); );
+    --header-menu-title-name-border-width: var(--zero-size-unit);/*if(style(--debug: true): var(--line-width); else: var(--zero-size-unit); );*/
     --header-menu-title-name-border-type: if(style(--debug: true): solid; else: none; );
     --header-menu-title-name-border-color: if(style(--debug: true): blue; else: var(--header-menu-title-name-background-color); );
     --header-menu-title-name-font-family:  var(--primary-font-family);
@@ -283,7 +283,7 @@
     --header-menu-item-grid-row: none;
     --header-menu-item-color: var(--secondary-color);
     --header-menu-item-background-color: var(--secondary-background);
-    --header-menu-item-border-width: if(style(--debug: true): var(--line-width); else: var(--zero-size-unit); );
+    --header-menu-item-border-width: var(--zero-size-unit);/*if(style(--debug: true): var(--line-width); else: var(--zero-size-unit); );*/
     --header-menu-item-border-type: if(style(--debug: true): solid; else: none; );
     --header-menu-item-border-color: if(style(--debug: true): blue; else: var(--header-menu-item-background-color); );
     --header-menu-item-font-family:  var(--primary-font-family);
@@ -389,7 +389,7 @@
     --card-title-grid-row: none;
     --card-title-color: var(--primary-color);
     --card-title-background-color: var(--primary-background);
-    --card-title-border-width: if(style(--debug: true): var(--line-width); else: var(--zero-size-unit); );
+    --card-title-border-width: var(--zero-size-unit);/*if(style(--debug: true): var(--line-width); else: var(--zero-size-unit); );*/
     --card-title-border-type: if(style(--debug: true): solid; else: none; );
     --card-title-border-color: if(style(--debug: true): blue; else: var(--card-title-background-color); );
     --card-title-font-family:  var(--primary-font-family);
@@ -453,7 +453,7 @@
     --image-grid-row: none;
     --image-color: var(--primary-color);
     --image-background-color: var(--primary-background);
-    --image-border-width: if(style(--debug: true): var(--line-width); else: var(--zero-size-unit); );
+    --image-border-width: var(--zero-size-unit);/*if(style(--debug: true): var(--line-width); else: var(--zero-size-unit); );*/
     --image-border-type: if(style(--debug: true): solid; else: none; );
     --image-border-color: if(style(--debug: true): blue; else: var(--image-background-color); );
     --image-font-family:  var(--primary-font-family);
@@ -515,7 +515,7 @@
     --header-menu-title-grid-row: none;
     --header-menu-title-color: var(--secondary-color);
     --header-menu-title-background-color: var(--secondary-background);
-    --header-menu-title-border-width: if(style(--debug: true): var(--line-width); else: var(--zero-size-unit); );
+    --header-menu-title-border-width: var(--zero-size-unit);/*if(style(--debug: true): var(--line-width); else: var(--zero-size-unit); );*/
     --header-menu-title-border-type: if(style(--debug: true): solid; else: none; );
     --header-menu-title-border-color: if(style(--debug: true): green; else: var(--header-menu-title-name-background-color); );
     --header-menu-title-font-family:  var(--primary-font-family);
@@ -583,7 +583,7 @@
     --header-menu-navigation-list-grid-row: none;
     --header-menu-navigation-list-color: var(--secondary-color);
     --header-menu-navigation-list-background-color: var(--secondary-background);
-    --header-menu-navigation-list-border-width: if(style(--debug: true): var(--line-width); else: var(--zero-size-unit); );
+    --header-menu-navigation-list-border-width: var(--zero-size-unit);/*if(style(--debug: true): var(--line-width); else: var(--zero-size-unit); );*/
     --header-menu-navigation-list-border-type: if(style(--debug: true): solid; else: none; );
     --header-menu-navigation-list-border-color: if(style(--debug: true): green; else: var(--header-menu-navigation-list-name-background-color); );
     --header-menu-navigation-list-font-family:  var(--primary-font-family);
@@ -717,7 +717,7 @@
     --hamburger-menu-link-grid-row: none;
     --hamburger-menu-link-color: var(--secondary-color);
     --hamburger-menu-link-background-color: var(--secondary-background);
-    --hamburger-menu-link-border-width: if(style(--debug: true): var(--line-width); else: var(--zero-size-unit); );
+    --hamburger-menu-link-border-width: var(--zero-size-unit);/*if(style(--debug: true): var(--line-width); else: var(--zero-size-unit); );*/
     --hamburger-menu-link-border-type: if(style(--debug: true): solid; else: none; );
     --hamburger-menu-link-border-color: if(style(--debug: true): yellow; else: var(--hamburger-menu-link-background-color); );
     --hamburger-menu-link-font-family:  var(--primary-font-family);
@@ -785,7 +785,7 @@
     --header-menu-navigation-show-color: var(--header-menu-navigation-color);
     --header-menu-navigation-background-color: var(--secondary-background);
     --header-menu-navigation-show-background-color: var(--header-menu-navigation-background-color);
-    --header-menu-navigation-border-width: if(style(--debug: true): var(--line-width); else: var(--zero-size-unit); );
+    --header-menu-navigation-border-width: var(--zero-size-unit);/*if(style(--debug: true): var(--line-width); else: var(--zero-size-unit); );*/
     --header-menu-navigation-border-type: if(style(--debug: true): solid; else: none; );
     --header-menu-navigation-border-color: if(style(--debug: true): yellow; else: var(--header-menu-navigation-background-color); );
     --header-menu-navigation-font-family:  var(--primary-font-family);
@@ -882,7 +882,7 @@
     --main-name-grid-row: 1;
     --main-name-color: var(--primary-color);
     --main-name-background-color: var(--primary-background);
-    --main-name-border-width: if(style(--debug: true): var(--line-width); else: var(--zero-size-unit); );
+    --main-name-border-width: var(--zero-size-unit);/*if(style(--debug: true): var(--line-width); else: var(--zero-size-unit); );*/
     --main-name-border-type: if(style(--debug: true): solid; else: none; );
     --main-name-border-color: if(style(--debug: true): yellow; else: var(--main-name-background-color); );
     --main-name-font-family:  var(--primary-font-family);
@@ -940,7 +940,7 @@
     --temple-cards-grid-row: 2;
     --temple-cards-color: var(--primary-color);
     --temple-cards-background-color: var(--primary-background);
-    --temple-cards-border-width: if(style(--debug: true): var(--line-width); else: var(--zero-size-unit); );
+    --temple-cards-border-width: var(--zero-size-unit);/*if(style(--debug: true): var(--line-width); else: var(--zero-size-unit); );*/
     --temple-cards-border-type: if(style(--debug: true): solid; else: none; );
     --temple-cards-border-color: if(style(--debug: true): yellow; else: var(--temple-cards-background-color); );
     --temple-cards-font-family:  var(--primary-font-family);
@@ -1000,7 +1000,7 @@
     --header-grid-row: 2;
     --header-color: var(--secondary-color);
     --header-background-color: var(--secondary-background);
-    --header-border-width: if(style(--debug: true): var(--line-width); else: var(--zero-size-unit); );
+    --header-border-width: var(--zero-size-unit);/*if(style(--debug: true): var(--line-width); else: var(--zero-size-unit); );*/
     --header-border-type: if(style(--debug: true): solid; else: none; );
     --header-border-color: if(style(--debug: true): orange; else: var(--header-background-color); );
     --header-font-family:  var(--primary-font-family);
@@ -1082,7 +1082,7 @@
     --main-grid-row: 3;
     --main-color: var(--primary-color);
     --main-background-color: var(--primary-background);
-    --main-border-width: if(style(--debug: true): var(--line-width); else: var(--zero-size-unit); );
+    --main-border-width: var(--zero-size-unit);/*if(style(--debug: true): var(--line-width); else: var(--zero-size-unit); );*/
     --main-border-type: if(style(--debug: true): solid; else: none; );
     --main-border-color: if(style(--debug: true): orange; else: var(--main-background-color); );
     --main-font-family:  var(--primary-font-family);
@@ -1139,7 +1139,7 @@
     --footer-grid-row: 4;
     --footer-color: var(--primary-color);
     --footer-background-color: var(--primary-background);
-    --footer-border-width: if(style(--debug: true): var(--line-width); else: var(--zero-size-unit); );
+    --footer-border-width: var(--zero-size-unit);/*if(style(--debug: true): var(--line-width); else: var(--zero-size-unit); );*/
     --footer-border-type: if(style(--debug: true): solid; else: none; );
     --footer-border-color: if(style(--debug: true): orange; else: var(--footer-background-color); );
     --footer-font-family:  var(--primary-font-family);
@@ -1196,7 +1196,7 @@
     --body-grid-row: none;
     --body-color: var(--primary-color);
     --body-background-color: var(--primary-background);
-    --body-border-width: if(style(--debug: true): var(--line-width); else: var(--zero-size-unit); );
+    --body-border-width: var(--zero-size-unit);/*if(style(--debug: true): var(--line-width); else: var(--zero-size-unit); );*/
     --body-border-type: if(style(--debug: true): solid; else: none; );
     --body-border-color: if(style(--debug: true): red; else: var(--body-background-color); );
     --body-font-family:  var(--primary-font-family);
