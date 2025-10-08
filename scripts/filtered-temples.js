@@ -329,7 +329,7 @@ function screenSizeChanged(event) {
 // Get the current date
 const currentYear = new Date().getFullYear();
 // Get the currentYear element from html
-const currentYearElement = document.getElementById("currentyear");
+const currentYearElement = document.querySelector('.currentyear');
 const oldDate = new Date("1900-1-1");
 const newDate = new Date("2001-1-1");
 const largeSize = 90000;
@@ -337,7 +337,7 @@ const smallSize = 10000;
 const body = document.querySelector('.body');
 const header = document.querySelector('.header');
 const mainnav = document.querySelector('.header-menu-navigation');
-const hambutton = document.querySelector('.header-menu-title');
+const hambutton = document.querySelector('.header-menu-title-name');
 const mainName = document.querySelector('.main-name');
 const homeButton = document.querySelector('.home');
 const oldButton = document.querySelector('.old');
@@ -351,7 +351,7 @@ let activeButton = document.querySelector('.active')
 // Get the documents last modified date
 const lastModDate = document.lastModified;
 // Get the lastModified element from html
-const lastModElement = document.getElementById("lastModified");
+const lastModElement = document.querySelector('.lastModified');
 
 // update the html element with the data
 if(currentYearElement) {
