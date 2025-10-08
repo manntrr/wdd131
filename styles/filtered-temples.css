@@ -1549,6 +1549,9 @@
     border-radius: var(--header-menu-item-hover-border-radius);
     padding: var(--header-menu-item-hover-padding);
 }
+li a:hover {
+    font: var(--header-menu-item-hover-font);
+}
 .active::before {
     content: var(--header-menu-item-active-content);
 }
