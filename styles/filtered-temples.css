@@ -654,7 +654,7 @@
     --card-grid-row: none;
     --card-color: var(--primary-color);
     --card-background-color: var(--primary-background);
-    --card-border-width: var(--line-width)/*if(style(--debug: true): var(--line-width); else: var(--line-width); );*/
+    --card-border-width: var(--line-width);/*if(style(--debug: true): var(--line-width); else: var(--line-width); );*/
     --card-border-type: none;/*if(style(--debug: true): solid; else: none; );*/
     --card-border-color: var(--card-color);/*if(style(--debug: true): green; else: var(--card-color); );*/
     --card-font-family:  var(--primary-font-family);
