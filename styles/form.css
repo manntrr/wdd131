@@ -135,7 +135,7 @@
     border: solid 1px #f00;
     border-left: solid 8px #f00;
 }
-.form input:required:valid {
+.form input:required:valid, select:required:valid {
     border: solid 1px #0a0;
     border-left: solid 8px #0a0;
 }
