@@ -139,12 +139,12 @@
     border: solid 1px #0a0;
     border-left: solid 8px #0a0;
 }
-.review {
-    text-align: left;
-    font-size: medium;
-}
 .result::before {
     content: ":  ";
+}
+.reviewPage {
+    text-align: left;
+    font-size: medium;
 }
 .footer {
     grid-column: 2;
