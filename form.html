@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <meta name="description" content="Product Review Submission Form.">
+    <meta name="author" content="Tracy Mann">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap" rel="stylesheet">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body class="body">
+    <header class="header">
+        <h1><span class="header-menu-title">Product Review</span></h1>
+    </header>
+    <main class="main">
+        <form method="get" action="review.html" class="form">
+            <label>Product Name*
+                <select id="productName" name="productName" class="productName" required autofocus tabindex="1">
+                    <!--<option value="" disabled selected>Select a Product &#9662;</option>
+                    <option value="placeHolder">Place Holder</option>-->
+                </select>
+            </label>
+            <div>Overall Rating*</div>
+            <label><input type="radio" id="oneStar" name="rating" value="1"  class="rating oneStar" required tabindex="2">&star;</label>
+            <label><input type="radio" id="twoStar" name="rating" value="2" class="rating twoStar" required tabindex="2">&star;&star;</label>
+            <label><input type="radio" id="threeStar" name="rating" value="3" class="rating threeStar" required tabindex="2">&star;&star;&star;</label>
+            <label><input type="radio" id="fourStar" name="rating" value="4" class="rating fourStar" required tabindex="2">&star;&star;&star;&star;</label>
+            <label><input type="radio" id="fiveStar" name="rating" value="5" class="rating fiveStar" required tabindex="2">&star;&star;&star;&star;&star;</label>
+            <label>Date of Installation<input type="date" id="installDate" name="installDate" class="installDate" required tabindex="3"></label>
+            <div>Which features did you find useful in the product?<span class="extraInstructions">(check all that apply)</span></div>
+            <label><input type="checkbox" id="design" name="design" value="yes" class="feature design" tabindex="4">Design</label>
+            <label><input type="checkbox" id="durability" name="durability" value="yes" class="feature durability" tabindex="5">Durability</label>
+            <label><input type="checkbox" id="ease" name="ease" value="yes" class="feature ease" tabindex="6">Ease of Use</label>
+            <label><input type="checkbox" id="performance" name="performance" value="yes" class="feature performance" tabindex="7">Performance</label>
+            <label>Written Review<span class="extraInstructions">(Optional)</span><textarea id="review" name="review" class="review" tabindex="8"></textarea></label>
+            <label>Your Name<span class="extraInstructions">(Optional)</span><input type="text" id="name" name="name" class="name" tabindex="9" autocomplete="name"></label>
+            <input type="submit" value="Post My Review" class="submit" tabindex="14">
+        </form>
+    </main>
+    <footer class="footer">
+        <p><span class="currentyear"></span> Tracy Robert Mann - South Carolina, USA.</p>
+        <p class="lastModified"></p>
+    </footer>
+</body>
+</html>
