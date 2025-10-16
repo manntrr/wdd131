@@ -4,10 +4,11 @@
     --tirtiary-color: #ff8800;
     --primary-background-color: #0000ff;
     --accent-color: #ff0000;
-  font-family: "Eagle Lake", serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Eagle Lake", serif;
+    font-weight: 400;
+    font-style: normal;
     text-align: center;
+    --contentHeight: 255rem;
 }
 .body{
     color: var(--primary-color);
@@ -16,62 +17,98 @@
     padding: .25rem;
     display: grid;
     grid-template-columns: auto 1fr auto;
-    grid-template-rows: 5rem 1fr 5rem;
+    grid-template-rows: 6rem 1fr 6rem;
 }
 .header{
     grid-column: 2;
     grid-row: 1;
-    margin: .25rem;
-    padding: .25rem;
+    color: var(--primary-background-color);
+    background-color: var(--primary-color);
+    margin: .5rem;
+    padding: .5rem;
     display: flex;
+    border-radius: 10px;
+    height: 5rem;
 }
 .header-menu-anchor {
-    color: var(--primary-color);
-    margin: .25rem;
-    padding: .25rem;
+    color: var(--primary-background-color);
+    background-color: var(--secondary-color);
+    margin: .5rem;
+    padding: .5rem;
+    padding-top: 0rem;
     text-decoration: none;
+    border-radius: 10px;
+    height: 3.5rem;
+}
+.header-menu-anchor h1 {
+    padding: 0px;
+    margin: 0px;
+    height: 3.5rem;
 }
 .header-menu-anchor:visited{
-    color: var(--primary-color);
+    color: var(--primary-background-color);
 }
 .header-menu-navigation {
     margin: .25rem;
     padding: .25rem;
     display: block;
+    height: 4rem;
 }
 .header-menu-navigation-list {
+    margin: 0px;
+    padding: 0px;
+    height: 4rem;
     display: flex;
 }
 .header-menu-item {
+    margin: 1rem 0rem 0rem 0rem;
+    padding: 0px;
+    height: 4rem;
     list-style-type: none;
-    margin: .25rem;
-    padding: .25rem;
-}
-.header-menu-item:hover {
-    list-style-type: none;
-    margin: .25rem;
-    padding: .25rem;
-    padding-top: .5rem;
 }
 .header-menu-item-anchor {
-    color: var(--primary-color);
+    color: var(--primary-background-color);
+    padding: 1rem;
+    margin: 0px;
+    height: 4rem;
+    font-weight: bold;
     text-decoration: none;
 }
+.header-menu-item-anchor:hover {
+    padding: 1rem 2rem;
+    font-size:large;
+}
+.header-menu-item-anchor.active {
+    margin-top: -2rem;
+    padding: 0px 1rem;
+}
+.header-menu-item-anchor.active::before {
+    padding: 1rem;
+    margin: 0px;
+    height: 1rem;
+    content: "🟡";
+}
 .header-menu-item-anchor:visited {
-    color: var(--primary-color);
+    color: var(--primary-background-color);
 }
 .main {
     grid-column: 2;
     grid-row: 2;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 5rem 5rem 5rem 10rem 20rem 15rem 255rem 5rem;
+}
+.site-plan-main {
+    grid-template-rows: 5rem 5rem 5rem 10rem 20rem 15rem var(--contentHeight) 5rem;
+}
+.index-main {
+    grid-template-rows: 5rem var(--contentHeight) 5rem;
 }
 .main-title {
     grid-column: 1;
     grid-row: 1;
-    margin: .25rem;
-    padding: .25rem;
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 3rem;
 }
 .main ul {
     list-style-type:upper-roman;
@@ -205,8 +242,109 @@
 .scenario {
     text-decoration: wavy;
 }
+.contentContainer {
+    grid-column: 1;
+    grid-row: 2;
+    margin: 1rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+.card {
+    margin: .5rem;
+    border-color: var(--tirtiary-color);
+    color: var(--primary-background-color);
+    background-color: var(--primary-color);
+    border-style: solid;
+    border-width: 1px;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+
+}
+.card-title {
+    color: var(--primary-background-color);
+    background-color: var(--primary-background);
+    display: block;
+    margin: .25rem;
+
+}
+.card-title.accent {
+    color: var(--accent-color);
+}
+.caption-title {
+    text-align: center;
+    font-size:xx-large;
+}
+.row-title {
+    font-size: large;
+    text-align: right;
+}
+.row-data {
+    text-align: left;
+    color: var(--tirtiary-color);
+    font-weight: bolder;
+}
+.row-data.accent {
+    text-align: left;
+    color: var(--primary-background-color);
+    font-weight: bolder;
+}
+.first-card {
+    grid-column: 2;
+    grid-row:1;
+}
+.second-card {
+    grid-column: 2;
+    grid-row:2;
+}
+.third-card {
+    grid-column: 2;
+    grid-row:3;
+}
+.forth-card {
+    grid-column: 2;
+    grid-row:4;
+}
+.fifth-card {
+    grid-column: 2;
+    grid-row:5;
+}
+.sixth-card {
+    grid-column: 2;
+    grid-row:6;
+}
+.seventh-card {
+    grid-column: 2;
+    grid-row:7;
+}
+.eighth-card {
+    grid-column: 2;
+    grid-row:8;
+}
+.ninth-card {
+    grid-column: 2;
+    grid-row:9;
+}
+.tenth-card {
+    grid-column: 2;
+    grid-row:10;
+}
+.image {
+    width: var(--image-width);
+    height: var(--image-height);
+}
 .footer {
     grid-column: 2;
     grid-row: 3;
+    color: var(--primary-background-color);
+    background-color: var(--primary-color);
     text-align: center;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 10px;
 }
