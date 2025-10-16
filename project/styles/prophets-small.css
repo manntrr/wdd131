@@ -1,0 +1,216 @@
+@media only screen and (max-width: 40rem) {
+    :root{
+        --contentHeight: 255rem;
+    }
+    .body{
+        margin: .25rem;
+        padding: .25rem;
+        grid-template-rows: 6rem 1fr 6rem;
+    }
+    .header{
+        grid-row: 1;
+        margin: .5rem;
+        padding: .5rem;
+        display: flex;
+        border-radius: 10px;
+        height: 5rem;
+    }
+    .header-menu-anchor {
+        margin: .5rem;
+        padding: .5rem;
+        padding-top: 0rem;
+        border-radius: 10px;
+        height: 3.5rem;
+    }
+    .header-menu-anchor h1 {
+        height: 3.5rem;
+    }
+    .header-menu-navigation {
+        margin: .25rem;
+        padding: .25rem;
+        height: 4rem;
+    }
+    .header-menu-navigation-list {
+        height: 4rem;
+        display: flex;
+    }
+    .header-menu-item {
+        margin: 1rem 0rem 0rem 0rem;
+        height: 4rem;
+    }
+    .header-menu-item-anchor {
+        padding: 1rem;
+        height: 4rem;
+    }
+    .header-menu-item-anchor:hover {
+        padding: 1rem 2rem;
+    }
+    .header-menu-item-anchor.active {
+        margin-top: -2rem;
+        padding: 0px 1rem;
+    }
+    .header-menu-item-anchor.active::before {
+        padding: 1rem;
+        height: 1rem;
+    }
+    .main {
+        grid-row: 2;
+    }
+    .site-plan-main {
+        grid-template-rows: 5rem 5rem 5rem 10rem 20rem 15rem var(--contentHeight) 5rem;
+    }
+    .index-main {
+        grid-template-rows: 5rem var(--contentHeight) 5rem;
+    }
+    .main-title {
+        grid-row: 1;
+        margin: 1rem;
+        padding: 1rem;
+        font-size: 3rem;
+    }
+    .section {
+        margin: .25rem;
+        padding: .25rem;
+    }
+    .section-header {
+        margin-top: .25rem;
+        margin-bottom: .25rem;
+        margin-left: .25rem;
+        padding: .25rem;
+    }
+    .site-name {
+        grid-row: 2;
+    }
+    .site-purpose {
+        grid-row: 3;
+    }
+    .scenarios {
+        grid-row: 4;
+    }
+    .color-schema {
+        grid-row: 5;
+    }
+    .palette-image{
+        height: 5rem;
+    }
+    .color-header {
+        margin: .25rem;
+        padding: .25rem;
+    }
+    .color {
+        margin: .25rem;
+        padding: .25rem;
+    }
+    .color-name {
+        margin: .25rem;
+        padding: .25rem;
+    }
+    .color-demo {
+        margin: .25rem;
+        padding: .25rem;
+    }
+    .color-code {
+        margin: .25rem;
+        padding: .25rem;
+    }
+    .typography {
+        grid-row: 7;
+    }
+    .font-header {
+        margin: .25rem;
+        padding: .25rem;
+    }
+    .font-sub-header {
+        margin: .25rem;
+        padding: .25rem;
+    }
+    .font-name {
+        margin: .25rem;
+        padding: .25rem;
+    }
+    .wireframes {
+        grid-row: 8;
+    }
+    .wireframe {
+        width: 10rem;
+    }
+    .web-wireframe .wireframe-image {
+        width: 40rem;
+    }
+    .mobile-wireframe .wireframe-image {
+        width: 10rem;
+    }
+    .contentContainer {
+        grid-row: 2;
+        margin: 1rem;
+        padding: 1rem;
+        grid-template-columns: auto 1fr auto;
+        column-gap: 1rem;
+        row-gap: 1rem;
+    }
+    .card {
+        margin: .5rem;
+        border-width: 1px;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
+    .card-title {
+        margin: .25rem;
+    }
+    .caption-title {
+        font-size:xx-large;
+    }
+    .row-title {
+        font-size: large;
+    }
+    .row-data {
+        font-weight: bolder;
+    }
+    .first-card {
+        grid-column: 2;
+        grid-row:1;
+    }
+    .second-card {
+        grid-column: 2;
+        grid-row:2;
+    }
+    .third-card {
+        grid-column: 2;
+        grid-row:3;
+    }
+    .forth-card {
+        grid-column: 2;
+        grid-row:4;
+    }
+    .fifth-card {
+        grid-column: 2;
+        grid-row:5;
+    }
+    .sixth-card {
+        grid-column: 2;
+        grid-row:6;
+    }
+    .seventh-card {
+        grid-column: 2;
+        grid-row:7;
+    }
+    .eighth-card {
+        grid-column: 2;
+        grid-row:8;
+    }
+    .ninth-card {
+        grid-column: 2;
+        grid-row:9;
+    }
+    .tenth-card {
+        grid-column: 2;
+        grid-row:10;
+    }
+    .footer {
+        grid-row: 3;
+        font-weight: bold;
+        margin: 0px;
+        padding: 0px;
+        border-radius: 10px;
+    }
+}
