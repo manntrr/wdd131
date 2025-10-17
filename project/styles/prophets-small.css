@@ -1,12 +1,16 @@
 @media only screen and (max-width: 40rem) {
     :root{
         --contentHeight: 255rem;
+        --image-width: 100%;
     }
     .body{
         margin: .25rem;
         padding: .25rem;
         grid-template-rows: 6rem 1fr 6rem;
     }
+.body.show {
+    grid-template-rows: var(--body-show-rows);
+}
     .header{
         grid-row: 1;
         margin: .5rem;
@@ -15,6 +19,81 @@
         border-radius: 10px;
         height: 5rem;
     }
+.header.show {
+    max-height: var(--header-show-max-height);
+    min-height: var(--header-show-min-height);
+    height: var(--header-show-height);
+    max-width: var(--header-show-max-width);
+    min-width: var(--header-show-min-width);
+    width: var(--header-show-width);
+    margin: var(--header-show-margin);
+    padding: var(--header-show-padding);
+}
+.hamburger-menu-link{
+    grid-column: var(--hamburger-menu-link-grid-column);
+    grid-row: var(--hamburger-menu-link-grid-row);
+    color: var(--hamburger-menu-link-color);
+    background-color: var(--hamburger-menu-link-background-color);
+    font: var(--hamburger-menu-link-font);
+    max-height: var(--hamburger-menu-link-max-height);
+    min-height: var(--hamburger-menu-link-min-height);
+    height: var(--hamburger-menu-link-height);
+    max-width: var(--hamburger-menu-link-max-width);
+    min-width: var(--hamburger-menu-link-min-width);
+    width: var(--hamburger-menu-link-width);
+    margin: var(--hamburger-menu-link-margin);
+    border: var(--hamburger-menu-link-border);
+    border-radius: var(--hamburger-menu-link-border-radius);
+    padding: var(--hamburger-menu-link-padding);
+    display: var(--hamburger-menu-link-display);
+    flex: var(--hamburger-menu-link-flex);
+    grid-template-columns: var(--hamburger-menu-link-columns);
+    grid-template-rows: var(--hamburger-menu-link-rows);
+    gap: var(--hamburger-menu-link-grid-gap);
+    text-align: var(--hamburger-menu-link-text-align);
+    vertical-align: var(--hamburger-menu-link-vertical-align);
+    text-decoration: var(--hamburger-menu-link-text-decoration);
+    list-style: var(--hamburger-menu-link-list-style);
+    transition: var(--hamburger-menu-link-transition);
+    content: var(--hamburger-menu-link-content);
+}
+/*--hamburger-menu-icon*/
+.header-menu-title-name::before {
+    grid-column: var(--hamburger-menu-icon-grid-column);
+    grid-row: var(--hamburger-menu-icon-grid-row);
+    color: var(--hamburger-menu-icon-color);
+    background-color: var(--hamburger-menu-icon-background-color);
+    font: var(--hamburger-menu-icon-font);
+    max-height: var(--hamburger-menu-icon-max-height);
+    min-height: var(--hamburger-menu-icon-min-height);
+    height: var(--hamburger-menu-icon-height);
+    max-width: var(--hamburger-menu-icon-max-width);
+    min-width: var(--hamburger-menu-icon-min-width);
+    width: var(--hamburger-menu-icon-width);
+    margin: var(--hamburger-menu-icon-margin);
+    border: var(--hamburger-menu-icon-border);
+    border-radius: var(--hamburger-menu-icon-border-radius);
+    padding: var(--hamburger-menu-icon-padding);
+    display: var(--hamburger-menu-icon-display);
+    flex: var(--hamburger-menu-icon-flex);
+    grid-template-columns: var(--hamburger-menu-icon-columns);
+    grid-template-rows: var(--hamburger-menu-icon-rows);
+    gap: var(--hamburger-menu-icon-grid-gap);
+    text-align: var(--hamburger-menu-icon-text-align);
+    vertical-align: var(--hamburger-menu-icon-vertical-align);
+    text-decoration: var(--hamburger-menu-icon-text-decoration);
+    list-style: var(--hamburger-menu-icon-list-style);
+    transition: var(--hamburger-menu-icon-transition);
+    content: var(--hamburger-menu-icon-content);
+}
+/*--hamburger-menu-icon-show*/
+.header-menu-title-name.show::before {
+    height: var(--hamburger-menu-icon-show-height);
+    width: var(--hamburger-menu-icon-show-width);
+    margin: var(--hamburger-menu-icon-show-margin);
+    padding: var(--hamburger-menu-icon-show-padding);
+    content: var(--hamburger-menu-icon-show-content);
+}
     .header-menu-anchor {
         margin: .5rem;
         padding: .5rem;
@@ -144,7 +223,7 @@
         grid-row: 2;
         margin: 1rem;
         padding: 1rem;
-        grid-template-columns: auto 1fr auto;
+        grid-template-columns: auto 99% auto;
         column-gap: 1rem;
         row-gap: 1rem;
     }
@@ -166,43 +245,43 @@
     .row-data {
         font-weight: bolder;
     }
-    .first-card {
+    .card-one {
         grid-column: 2;
         grid-row:1;
     }
-    .second-card {
+    .card-two {
         grid-column: 2;
         grid-row:2;
     }
-    .third-card {
+    .card-three {
         grid-column: 2;
         grid-row:3;
     }
-    .forth-card {
+    .card-four {
         grid-column: 2;
         grid-row:4;
     }
-    .fifth-card {
+    .card-five {
         grid-column: 2;
         grid-row:5;
     }
-    .sixth-card {
+    .card-six {
         grid-column: 2;
         grid-row:6;
     }
-    .seventh-card {
+    .card-seven {
         grid-column: 2;
         grid-row:7;
     }
-    .eighth-card {
+    .card-eight {
         grid-column: 2;
         grid-row:8;
     }
-    .ninth-card {
+    .card-nine {
         grid-column: 2;
         grid-row:9;
     }
-    .tenth-card {
+    .card-ten {
         grid-column: 2;
         grid-row:10;
     }

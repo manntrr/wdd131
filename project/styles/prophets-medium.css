@@ -1,7 +1,7 @@
-@media only screen and (min-width: 81rem) {
+@media only screen and (min-width: 41rem) and (max-width: 80rem) {
     :root{
         --contentHeight: 255rem;
-        --image-width: 100%
+        --image-width: 100%;
     }
     .body{
         margin: .25rem;
@@ -223,7 +223,7 @@
         grid-row: 2;
         margin: 1rem;
         padding: 1rem;
-        grid-template-columns: auto 30% 30% 30% auto;
+        grid-template-columns: auto 49% 49% auto;
         column-gap: 1rem;
         row-gap: 1rem;
     }
@@ -254,36 +254,36 @@
         grid-row:1;
     }
     .card-three {
-        grid-column: 4;
-        grid-row:1;
+        grid-column: 2;
+        grid-row:2;
     }
     .card-four {
-        grid-column: 2;
+        grid-column: 3;
         grid-row:2;
     }
     .card-five {
-        grid-column: 3;
-        grid-row:2;
+        grid-column: 2;
+        grid-row:3;
     }
     .card-six {
-        grid-column: 4;
-        grid-row:2;
+        grid-column: 3;
+        grid-row:3;
     }
     .card-seven {
         grid-column: 2;
-        grid-row:3;
+        grid-row:4;
     }
     .card-eight {
         grid-column: 3;
-        grid-row:3;
+        grid-row:4;
     }
     .card-nine {
-        grid-column: 4;
-        grid-row:3;
+        grid-column: 2;
+        grid-row:5;
     }
     .card-ten {
-        grid-column: 2;
-        grid-row:4;
+        grid-column: 3;
+        grid-row:5;
     }
     .footer {
         grid-row: 3;

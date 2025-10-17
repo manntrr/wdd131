@@ -4,6 +4,8 @@
     --tirtiary-color: #ff8800;
     --primary-background-color: #0000ff;
     --accent-color: #ff0000;
+    --hamburger-menu-icon-content: "≡";
+	--hamburger-menu-icon-show-content: "❌";
     font-family: "Eagle Lake", serif;
     font-weight: 400;
     font-style: normal;
@@ -19,6 +21,81 @@
     grid-column: 2;
     color: var(--primary-background-color);
     background-color: var(--primary-color);
+}
+.header.show {
+    max-height: var(--header-show-max-height);
+    min-height: var(--header-show-min-height);
+    height: var(--header-show-height);
+    max-width: var(--header-show-max-width);
+    min-width: var(--header-show-min-width);
+    width: var(--header-show-width);
+    margin: var(--header-show-margin);
+    padding: var(--header-show-padding);
+}
+.hamburger-menu-link{
+    grid-column: var(--hamburger-menu-link-grid-column);
+    grid-row: var(--hamburger-menu-link-grid-row);
+    color: var(--hamburger-menu-link-color);
+    background-color: var(--hamburger-menu-link-background-color);
+    font: var(--hamburger-menu-link-font);
+    max-height: var(--hamburger-menu-link-max-height);
+    min-height: var(--hamburger-menu-link-min-height);
+    height: var(--hamburger-menu-link-height);
+    max-width: var(--hamburger-menu-link-max-width);
+    min-width: var(--hamburger-menu-link-min-width);
+    width: var(--hamburger-menu-link-width);
+    margin: var(--hamburger-menu-link-margin);
+    border: var(--hamburger-menu-link-border);
+    border-radius: var(--hamburger-menu-link-border-radius);
+    padding: var(--hamburger-menu-link-padding);
+    display: var(--hamburger-menu-link-display);
+    flex: var(--hamburger-menu-link-flex);
+    grid-template-columns: var(--hamburger-menu-link-columns);
+    grid-template-rows: var(--hamburger-menu-link-rows);
+    gap: var(--hamburger-menu-link-grid-gap);
+    text-align: var(--hamburger-menu-link-text-align);
+    vertical-align: var(--hamburger-menu-link-vertical-align);
+    text-decoration: var(--hamburger-menu-link-text-decoration);
+    list-style: var(--hamburger-menu-link-list-style);
+    transition: var(--hamburger-menu-link-transition);
+    content: var(--hamburger-menu-link-content);
+}
+/*--hamburger-menu-icon*/
+.header-menu-title-name::before {
+    grid-column: var(--hamburger-menu-icon-grid-column);
+    grid-row: var(--hamburger-menu-icon-grid-row);
+    color: var(--hamburger-menu-icon-color);
+    background-color: var(--hamburger-menu-icon-background-color);
+    font: var(--hamburger-menu-icon-font);
+    max-height: var(--hamburger-menu-icon-max-height);
+    min-height: var(--hamburger-menu-icon-min-height);
+    height: var(--hamburger-menu-icon-height);
+    max-width: var(--hamburger-menu-icon-max-width);
+    min-width: var(--hamburger-menu-icon-min-width);
+    width: var(--hamburger-menu-icon-width);
+    margin: var(--hamburger-menu-icon-margin);
+    border: var(--hamburger-menu-icon-border);
+    border-radius: var(--hamburger-menu-icon-border-radius);
+    padding: var(--hamburger-menu-icon-padding);
+    display: var(--hamburger-menu-icon-display);
+    flex: var(--hamburger-menu-icon-flex);
+    grid-template-columns: var(--hamburger-menu-icon-columns);
+    grid-template-rows: var(--hamburger-menu-icon-rows);
+    gap: var(--hamburger-menu-icon-grid-gap);
+    text-align: var(--hamburger-menu-icon-text-align);
+    vertical-align: var(--hamburger-menu-icon-vertical-align);
+    text-decoration: var(--hamburger-menu-icon-text-decoration);
+    list-style: var(--hamburger-menu-icon-list-style);
+    transition: var(--hamburger-menu-icon-transition);
+    content: var(--hamburger-menu-icon-content);
+}
+/*--hamburger-menu-icon-show*/
+.header-menu-title-name.show::before {
+    height: var(--hamburger-menu-icon-show-height);
+    width: var(--hamburger-menu-icon-show-width);
+    margin: var(--hamburger-menu-icon-show-margin);
+    padding: var(--hamburger-menu-icon-show-padding);
+    content: var(--hamburger-menu-icon-show-content);
 }
 .header-menu-anchor {
     color: var(--primary-background-color);
